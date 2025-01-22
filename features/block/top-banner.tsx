@@ -100,7 +100,7 @@ export const IndexBanner = () => {
   }
   return (
     <Carousel className="bg-cover" autoplay effect="fade">
-      <TopBlock
+      {/* <TopBlock
         className="relative bg-center bg-no-repeat"
         imageUrl="https://assets.lbctrl.com/uploads/88cd3d2c-343f-49e1-a236-aa9ef8eecb96/zero.png"
       >
@@ -179,16 +179,6 @@ export const IndexBanner = () => {
                         </span>
                       </div>
                     </li>
-                    {/* <li>
-                      <div className="flex flex-col items-start md:space-x-2 md:items-center md:flex-row">
-                        <span className="text-xl font-bold text-brand_color">
-                          {i18n.t('features_block_top_banner_891198')}
-                        </span>
-                        <span className="text-sm font-bold text-white">
-                          {i18n.t('features_block_top_banner_891199')}
-                        </span>
-                      </div>
-                    </li> */}
                   </ul>
                 )}
 
@@ -227,7 +217,7 @@ export const IndexBanner = () => {
             }
           ></BlockBetween>
         </Block>
-      </TopBlock>
+      </TopBlock> */}
       {/* <TopBlock className="bg-repeat-round bg-[#0B0550] relative">
         <Block>
           <BlockBetween
