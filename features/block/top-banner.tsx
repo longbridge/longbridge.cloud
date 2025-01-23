@@ -7,6 +7,7 @@ import { Carousel } from 'antd'
 import 'antd/dist/antd.css'
 import { useTranslation } from 'next-i18next'
 import classNames from 'classnames'
+import { getContactFormUrl } from '@/utils/common'
 
 export const BG_BANNER = 'https://pub.pbkrs.com/files/202207/g1pGdC8PkwxTaqmw/trading_platform.png'
 const IMAGE_URL = 'https://pub.pbkrs.com/files/202207/Ggr6CvK2f2jWASHe/Group_427318855.png'
@@ -100,7 +101,7 @@ export const IndexBanner = () => {
   }
   return (
     <Carousel className="bg-cover" autoplay effect="fade">
-      {/* <TopBlock
+      <TopBlock
         className="relative bg-center bg-no-repeat"
         imageUrl="https://assets.lbctrl.com/uploads/88cd3d2c-343f-49e1-a236-aa9ef8eecb96/zero.png"
       >
@@ -190,24 +191,13 @@ export const IndexBanner = () => {
                 >
                   <Button
                     link
-                    url="https://longbridge.feishu.cn/share/base/form/shrcnOorQd1IMb0pcb26rYCSvrh"
+                    url={getContactFormUrl(i18n.i18n.language)}
                     size="medium"
                     className="!bg-transparent border-2 border-front-bg-color-1 justify-self-start"
                   >
-                    {i18n.t('features_block_top_banner_891200')}
+                    {i18n.t('talk-to-us')}
                   </Button>
-                  <div className="flex flex-col items-center lg:items-start lg:justify-center">
-                    <img
-                      src="https://assets.lbctrl.com/uploads/a7cf0138-5514-4d2a-9e44-e4d78e8aef06/coffee.png"
-                      alt="coffee"
-                      className="h-12"
-                    />
-                    {isEn && (
-                      <span className="text-xs text-[#D7D7D7] font-normal mt-1">
-                        Enjoy a coffee on us – a welcome gift for signing up
-                      </span>
-                    )}
-                  </div>
+                  {/* <ContactUs /> */}
                 </div>
                 <div className="absolute self-end text-sm font-thin text-front-bg-color-1 bottom-4 right-4 left-4 md:relative md:-bottom-10 xl:-bottom-20 md:left-0">
                   <sup>*</sup>
@@ -217,8 +207,8 @@ export const IndexBanner = () => {
             }
           ></BlockBetween>
         </Block>
-      </TopBlock> */}
-      {/* <TopBlock className="bg-repeat-round bg-[#0B0550] relative">
+      </TopBlock>
+      <TopBlock className="bg-repeat-round bg-[#0B0550] relative">
         <Block>
           <BlockBetween
             left={
@@ -249,7 +239,7 @@ export const IndexBanner = () => {
           ></BlockBetween>
         </Block>
       </TopBlock>
-      <TopBlock imageUrl={BG_BANNER}>
+      {/* <TopBlock imageUrl={BG_BANNER}>
         <Block>
           <BlockBetween
             left={
