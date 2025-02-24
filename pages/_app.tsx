@@ -12,6 +12,7 @@ import { ToastContainer } from 'react-toastify'
 import '@/styles/globals.scss'
 import 'react-toastify/dist/ReactToastify.css'
 import Script from 'next/script'
+import { useRouter } from 'next/router'
 
 const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }: AppProps) => {
   const nextRouter = (
@@ -32,7 +33,15 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
     // const locale = getSystemLanguage()
 
     // Set <html lang="en" />
-    const _locale = pathLocale || 'zh-HK'
+    const locale_map: any = {
+      'zh': 'zh-CN',
+      'zh-CN': 'zh-CN',
+      'en': 'en',
+      'en-US': 'en',
+      'zh-HK': 'zh-HK',
+      'zh-TW': 'zh-HK',
+    }
+    const _locale = pathLocale || locale_map[navigator.language] || 'zh-HK'
     const html = document.querySelector('html')
     if (html) {
       html?.setAttribute('lang', _locale)
@@ -122,6 +131,12 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
 })
 
 export default function LBApp(props: any) {
+  const router = useRouter()
+
+  // 自动重定向逻辑
+  if (router.pathname === '/' && typeof window !== 'undefined') {
+    router.replace('/[lang]', `/${router.locale || 'zh-HK'}`)
+  }
   props.router.locale = props.router.query.locale
   return <AppWithTranslation {...props} />
 }
