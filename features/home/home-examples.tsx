@@ -8,14 +8,14 @@ const HomeExamples = () => {
   const i18n = useTranslation('common')
   const list = useMemo(() => {
     return [
-      {
-        title: i18n.t('features_home_home_examples_891131'),
-        desc: i18n.t('features_home_home_examples_891132'),
-        content: i18n.t('pages_example0'),
-        position: i18n.t('pages_example1'),
-        name: '',
-        company: i18n.t('pages_example2'),
-      },
+      // {
+      //   title: i18n.t('features_home_home_examples_891131'),
+      //   desc: i18n.t('features_home_home_examples_891132'),
+      //   content: i18n.t('pages_example0'),
+      //   position: i18n.t('pages_example1'),
+      //   name: '',
+      //   company: i18n.t('pages_example2'),
+      // },
       {
         title: i18n.t('features_home_home_examples_891131'),
         desc: i18n.t('features_home_home_examples_891132'),
@@ -23,6 +23,30 @@ const HomeExamples = () => {
         name: i18n.t('features_home_home_examples_891138'),
         position: i18n.t('features_home_home_examples_891135'),
         company: i18n.t('features_home_home_examples_891139'),
+      },
+      {
+        title: i18n.t('features_home_home_examples_891131'),
+        desc: i18n.t('features_home_home_examples_891132'),
+        content: i18n.t('features_home_home_examples_891202'),
+        name: 'J.W.',
+        position: i18n.t('features_home_home_examples_891203'),
+        company: i18n.t('features_home_home_examples_891204'),
+      },
+      {
+        title: i18n.t('features_home_home_examples_891131'),
+        desc: i18n.t('features_home_home_examples_891132'),
+        content: i18n.t('features_home_home_examples_891205'),
+        name: 'Kenny Leung',
+        position: i18n.t('features_home_home_examples_891203'),
+        company: i18n.t('features_home_home_examples_891206'),
+      },
+      {
+        title: i18n.t('features_home_home_examples_891131'),
+        desc: i18n.t('features_home_home_examples_891132'),
+        content: i18n.t('features_home_home_examples_891207'),
+        name: 'Danny Chung',
+        position: i18n.t('features_home_home_examples_891203'),
+        company: i18n.t('features_home_home_examples_891208'),
       },
       // {
       //   title: i18n.t('features_home_home_examples_891131'),
@@ -48,7 +72,7 @@ const HomeExamples = () => {
             }
             `}
       </style>
-      <Carousel className="examples-section bg-cover" autoplay={true} autoplaySpeed={5000} effect="fade">
+      <Carousel className="bg-cover examples-section" autoplay={true} autoplaySpeed={5000} effect="fade">
         {list.map((item, index) => {
           return (
             <div className="" key={index}>
@@ -65,7 +89,7 @@ const HomeExamples = () => {
                 <div className="text-center mt-4 text-lg sm:text-xl text-[#ffffff] border-box px-5">{item.desc}</div>
                 <div className="relative mt-[20px] md:mt-[50px] lg:mt-[70px] xl:mt-[70px] 2xl:mt-[70px] w-[49%] m-auto text-[#ffffff] min-w-[370px] px-3">
                   <div className="leading-7 skew-x-[-6deg]">{item.content}</div>
-                  <div className="text-right mt-2">
+                  <div className="mt-2 text-right">
                     <span className="mr-3 font-semibold">{item.name}</span>
                     <span>{item.position}</span>
                   </div>
