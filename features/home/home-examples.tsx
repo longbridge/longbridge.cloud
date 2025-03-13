@@ -37,7 +37,7 @@ const HomeExamples = () => {
         desc: i18n.t('features_home_home_examples_891132'),
         content: i18n.t('features_home_home_examples_891205'),
         name: 'Kenny Leung',
-        position: i18n.t('features_home_home_examples_891203'),
+        position: 'Responsible Officer',
         company: i18n.t('features_home_home_examples_891206'),
       },
       {
@@ -45,7 +45,7 @@ const HomeExamples = () => {
         desc: i18n.t('features_home_home_examples_891132'),
         content: i18n.t('features_home_home_examples_891207'),
         name: 'Danny Chung',
-        position: i18n.t('features_home_home_examples_891203'),
+        position: 'RO & Director',
         company: i18n.t('features_home_home_examples_891208'),
       },
       // {
