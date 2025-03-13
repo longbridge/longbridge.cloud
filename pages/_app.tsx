@@ -1,18 +1,31 @@
+import { useMemo } from 'react'
 import RouteList from '@/routes'
-import { getBasenameLocale, getLocaleHref, getSystemLanguage, isServer, getRootDomain } from '@/utils/common'
+import { getBasenameLocale, getLocaleHref, isServer } from '@/utils/common'
 import { useMount } from 'ahooks'
-import Cookies from 'js-cookie'
 import { appWithTranslation } from 'next-i18next'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { BrowserRouter } from 'react-router-dom'
 import { StaticRouter } from 'react-router-dom/server'
 import { ToastContainer } from 'react-toastify'
-
+import 'antd/dist/antd.variable.min.css'
 import '@/styles/globals.scss'
 import 'react-toastify/dist/ReactToastify.css'
+import { ConfigProvider } from 'antd'
+import moment from 'moment'
+import enUS from 'antd/lib/locale/en_US'
+import zhCN from 'antd/lib/locale/zh_CN'
+import zhHK from 'antd/lib/locale/zh_HK'
+import 'moment/locale/zh-cn'
+import 'moment/locale/zh-hk'
+
 import Script from 'next/script'
 import { useRouter } from 'next/router'
+
+const server_url =
+  process.env.PROXY === 'prod'
+    ? 'https://event-tracking.lbkrs.com/sa?project=whale_pro'
+    : 'https://event-forward.longbridge.xyz/sa?project=whale_test'
 
 const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }: AppProps) => {
   const nextRouter = (
@@ -27,12 +40,8 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
     </BrowserRouter>
   )
 
-  useMount(() => {
+  const locale = useMemo(() => {
     const pathLocale = getBasenameLocale()
-    // const cookieLocale = Cookies.get('locale')
-    // const locale = getSystemLanguage()
-
-    // Set <html lang="en" />
     const locale_map: any = {
       'zh': 'zh-CN',
       'zh-CN': 'zh-CN',
@@ -41,11 +50,25 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
       'zh-HK': 'zh-HK',
       'zh-TW': 'zh-HK',
     }
-    const _locale = pathLocale || locale_map[navigator.language] || 'zh-HK'
+    return locale_map[pathLocale] || 'zh-HK'
+  }, [])
+
+  const antdLocale = useMemo(() => {
+    const locale_map: any = {
+      'zh-CN': zhCN,
+      'zh-HK': zhHK,
+      'en': enUS,
+    }
+    return locale_map[locale] || zhHK
+  }, [locale])
+
+  useMount(() => {
+    const pathLocale = getBasenameLocale()
+    moment.locale(locale)
     const html = document.querySelector('html')
     if (html) {
-      html?.setAttribute('lang', _locale)
-      html.classList.add(_locale)
+      html.setAttribute('lang', locale)
+      html.classList.add(locale)
     }
     if (pathLocale) {
       // if (pathLocale !== cookieLocale) {
@@ -56,8 +79,8 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
       // }
       return
     }
-    if (_locale) {
-      location.href = getLocaleHref(pathLocale, _locale)
+    if (locale) {
+      location.href = getLocaleHref(pathLocale, locale)
     }
   })
 
@@ -85,19 +108,20 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
   })
 
   return (
-    <div className="app">
-      <Head>
-        <script src={'https://assets.lbctrl.com/pkg/sensorsdata/1.21.13.min.js'} defer />
-        <link rel="icon" type="image/x-icon" href="https://pub.pbkrs.com/files/202205/xAwaQmCk1cD1AUsm/favicon.png" />
-      </Head>
-      <Script
-        id="sensors-inject"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+    <ConfigProvider locale={antdLocale}>
+      <div className="app" key={locale}>
+        <Head>
+          <script src={'https://assets.lbctrl.com/pkg/sensorsdata/1.21.13.min.js'} defer />
+          <link rel="icon" type="image/x-icon" href="https://pub.pbkrs.com/files/202205/xAwaQmCk1cD1AUsm/favicon.png" />
+        </Head>
+        <Script
+          id="sensors-inject"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             const sensors = window['sensorsDataAnalytic201505'];
             sensors.init({
-              server_url: 'https://event-tracking.lbctrl.com/sa?project=whale_pro',
+              server_url: '${server_url}',
               heatmap:{scroll_notice_map:'not_collect'},
               is_track_single_page:true,
               use_client_time:true,
@@ -107,14 +131,14 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
             sensors.quick('autoTrack');
             window['sensors'] = sensors;
           `,
-        }}
-      ></Script>
-      <Script id="google-source" src="https://www.googletagmanager.com/gtag/js?id=G-K537QXZ7MV" async></Script>
-      <Script
-        id="google-tag"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          }}
+        ></Script>
+        <Script id="google-source" src="https://www.googletagmanager.com/gtag/js?id=G-K537QXZ7MV" async></Script>
+        <Script
+          id="google-tag"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             <!-- Google tag (gtag.js) -->
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -122,11 +146,12 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
 
               gtag('config', 'G-K537QXZ7MV');
           `,
-        }}
-      ></Script>
-      <ToastContainer position="top-center" theme="colored" hideProgressBar />
-      {isServer() ? nextRouter : feRouter}
-    </div>
+          }}
+        ></Script>
+        <ToastContainer autoClose={1800} position="top-center" theme="colored" hideProgressBar />
+        {isServer() ? nextRouter : feRouter}
+      </div>
+    </ConfigProvider>
   )
 })
 

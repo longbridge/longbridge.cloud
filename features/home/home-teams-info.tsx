@@ -2,8 +2,13 @@ import { useTranslation } from 'next-i18next'
 import { useMemo } from 'react'
 import Box from '@/features/product/Box'
 import Title from '@/features/product/title'
+import classNames from 'classnames'
+interface HomeTeamsInfoProps {
+  className?: string
+  itemStyle?: React.CSSProperties
+}
 
-const HomeTeamsInfo = () => {
+const HomeTeamsInfo = ({ className, itemStyle }: HomeTeamsInfoProps) => {
   const i18n = useTranslation('common')
 
   const list = useMemo(() => {
@@ -42,18 +47,18 @@ const HomeTeamsInfo = () => {
   }, [])
 
   return (
-    <Box>
+    <Box className={className}>
       <>
         <Title title={i18n.t('features_home_home_teams_info_891151')} />
         <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {list.map((item, index) => {
             return (
-              <div key={index} className="border border-box p-7 rounded-lg">
+              <div key={index} style={itemStyle} className="border border-box p-7 rounded-lg">
                 <img src={item.img} alt="" className="h-[68px]" />
                 <div className="mt-6 mb-3 font-semibold text-xl">{item.title}</div>
                 {item?.desc?.map((it, j) => {
                   return (
-                    <div key={j} className="text-text_color_1_supplement">
+                    <div key={j} className={classNames('text-text_color_1_supplement')}>
                       {it}
                     </div>
                   )

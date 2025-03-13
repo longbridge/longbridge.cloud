@@ -28,5 +28,9 @@
     @media screen and (max-width: 1520px) {
       @apply mr-20;
     }
+
+    @media screen and (max-width: 768px) {
+      @apply mr-0;
+    }
   }
 }

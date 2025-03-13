@@ -1,0 +1,18 @@
+:local(.modal) {
+  &.ant-modal {
+    @apply m-0 top-0 p-0 w-full md:mx-auto max-w-[100vw];
+  }
+}
+
+:local(.wrapper) {
+  // 兼容老版本
+  height: 100vh;
+  height: 100dvh;
+  @apply w-full flex items-center justify-center;
+}
+
+:local(.content) {
+  height: 100vh;
+  height: 100dvh;
+  @apply flex flex-col bg-front-bg-color-1 w-screen md:w-[400px] md:h-auto space-y-4 pointer-events-auto pb-6;
+}

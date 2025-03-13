@@ -7,7 +7,7 @@ import Icon from '../icon'
 type IItem = {
   rawValue?: boolean
   children?: any
-  label: string
+  label: string | React.ReactNode
   shortLabel?: string | React.ReactNode
   value: string | number
 }
@@ -31,7 +31,7 @@ const Dropdown: React.FC<IDropdownProps> = ({
   onChange,
   trigger = 'click',
   items = [],
-  renderItem
+  renderItem,
 }) => {
   const [showContent, setShowContent] = React.useState(false)
   const selectedItem = items.find(item => item.value === value)
@@ -61,7 +61,12 @@ const Dropdown: React.FC<IDropdownProps> = ({
   }
 
   return (
-    <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={classNames(styles.dropdown, className)} ref={containerRef}>
+    <div
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className={classNames(styles.dropdown, className)}
+      ref={containerRef}
+    >
       <div className="trigger" onClick={onClick}>
         {selectedItem && !alwaysChildren ? (
           <div className="flex items-center">

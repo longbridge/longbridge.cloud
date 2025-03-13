@@ -18,9 +18,14 @@ export const PageLayout: FC<{
   )
 }
 
+const disableHighlight = ['/whale-ambassador/poster']
+
 export const Layout: FC = ({ children }) => {
   useEffect(() => {
-    loadHighlight('.highlight-container')
+    const pathname = window.location.pathname
+    if (disableHighlight.every(path => !pathname.includes(path))) {
+      loadHighlight('.highlight-container')
+    }
   }, [])
   return (
     <>

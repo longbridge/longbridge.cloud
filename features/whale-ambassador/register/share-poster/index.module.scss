@@ -1,0 +1,13 @@
+:local(.poster-modal-content) {
+  @media screen and (min-width: 768px) {
+    background: center center/ cover
+      url('https://assets.lbctrl.com/uploads/6b8a07fb-986c-4517-afc2-c5a31f76aff7/e704ff7a639f7b58ce3c25e3134201d0.png');
+  }
+  .whale-modal-close-btn {
+    --text-color-1: #fff;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

@@ -90,7 +90,7 @@ const Footer: FC = () => {
       },
     ]
     return { frontSell, sellEnd, cooperation, aboutUs }
-  }, [])
+  }, [i18n])
 
   const fetchLegalTerms = async () => {
     const key = 'legal_terms'

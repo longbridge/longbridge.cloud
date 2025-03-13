@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'LBD_MONO_BOLD';
+  src: url('https://assets.lbctrl.com/uploads/760a65ee-ec8f-4076-a536-523ced572cbe/lbd-bold.otf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+:local(.amount) {
+  font-family: 'LBD_MONO_BOLD';
+}

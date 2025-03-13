@@ -104,35 +104,6 @@ function useNavs() {
             value: '/solutions/wealth-management',
             label: i18n.t('pages_virtual_assets36_1'),
           },
-          // {
-          //   value: '/solutions/brokerages',
-          //   label: i18n.t('pages_brokerages0'),
-          // },
-          // {
-          //   value: '/solutions/small-brokerages',
-          //   label: i18n.t('pages_small_brokerages001'),
-          // },
-          // {
-          //   value: '/solutions',
-          //   label: i18n.t('solutions_page_001'),
-          // },
-          // {
-          //   value: '/solutions/app',
-          //   label: i18n.t('solutions_app_page_001'),
-          // },
-          /** 20230216 - 三三说屏蔽的
-          {
-            value: '/solutions/introducing-broker',
-            label: i18n.t('introducing-broker.page-title'),
-          },
-          {
-            value: '/solutions/longport',
-            label: i18n.t('longport.page-title'),
-          },
-          {
-            value: '/solutions/white-label',
-            label: i18n.t('white-label.page-title'),
-          }, */
         ],
       },
       {
@@ -141,35 +112,25 @@ function useNavs() {
         label: i18n.t('header_nav_007'),
         children: [],
       },
-      // {
-      //   value: "/docs",
-      //   suffix: '',
-      //   label: i18n.t('help-docs'),
-      //   children: [],
-      //   rawValue: true,
-      // },
-      // {
-      //   value: getContactFormUrl(i18n.i18n.language),
-      //   suffix: '',
-      //   label: i18n.t('talk-to-us'),
-      //   children: [],
-      //   rawValue: true,
-      // },
       {
         value: '/whale-reports',
         suffix: '',
         label: i18n.t('header_nav_009'),
         children: [],
       },
-      // {
-      //   value: '/live',
-      //   label: i18n.t('header_nav_008'),
-      //   suffix: <div className="relative flex items-center justify-center">
-      //     <Icon type="live" />
-      //     <Icon type="play" className="absolute text-xs left-1/2 top-1/2 play-icon" />
-      //   </div>,
-      //   children: [],
-      // },
+      {
+        value: '/whale-ambassador',
+        suffix: '',
+        label: (
+          <span className="inline-flex items-center">
+            <span>{i18n.t('header_nav_010')}</span>
+            <span className="text-[12px] leading-[18px] ml-2  text-[#CA8123] border border-[#FCF2D3] bg-[#FEFAEE] px-1">
+              New
+            </span>
+          </span>
+        ),
+        children: [],
+      },
     ]
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reports])
@@ -195,12 +156,12 @@ const Navs = () => {
 
   return (
     <>
-      <div className={classNames(styles.navs, 'items-center gap-14 xl:gap-20 hidden md:flex')}>
+      <div className={classNames(styles.navs, 'items-center gap-8 lg:gap-14 xl:gap-20 hidden md:flex')}>
         {navs.map(nav => {
           return (
             <div
               key={nav.value}
-              className={classNames('nav-item text-[16px] leading-4', {
+              className={classNames('nav-item text-[16px] leading-5', {
                 'nav-item__selected': nav.value === selectedNav?.value,
               })}
             >
@@ -298,7 +259,7 @@ const Navs = () => {
 
 const Header: FC = () => {
   return (
-    <div className={classNames(styles.header, 'flex px-6 xl:px-10 py-4')}>
+    <div className={classNames(styles.header, 'flex px-6 xl:px-10 py-4 items-center')}>
       <div className="logo-wrap">
         <LocaleLink className="logo" to="/">
           <Icon type="cloud-logo" className="align-top" />
