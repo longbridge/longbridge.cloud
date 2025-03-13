@@ -1,16 +1,16 @@
 import RouteList from '@/routes'
-import { getBasenameLocale, getLocaleHref, getSystemLanguage, isServer, getRootDomain } from '@/utils/common'
+import { getBasenameLocale, getLocaleHref, isServer } from '@/utils/common'
 import { useMount } from 'ahooks'
-import Cookies from 'js-cookie'
 import { appWithTranslation } from 'next-i18next'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { BrowserRouter } from 'react-router-dom'
 import { StaticRouter } from 'react-router-dom/server'
 import { ToastContainer } from 'react-toastify'
-
+import 'antd/dist/antd.variable.min.css'
 import '@/styles/globals.scss'
 import 'react-toastify/dist/ReactToastify.css'
+
 import Script from 'next/script'
 import { useRouter } from 'next/router'
 
@@ -124,7 +124,7 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
           `,
         }}
       ></Script>
-      <ToastContainer position="top-center" theme="colored" hideProgressBar />
+      <ToastContainer autoClose={1800} position="top-center" theme="colored" hideProgressBar />
       {isServer() ? nextRouter : feRouter}
     </div>
   )

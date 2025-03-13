@@ -1,0 +1,21 @@
+:local(.input) {
+  &.ant-input-group.ant-input-group-compact {
+    & > :not(:last-child) {
+      margin-right: -2px;
+    }
+    @apply w-full flex;
+  }
+  .ant-select.ant-select-single {
+    flex: 1;
+    .ant-select-selector {
+      @apply py-2 px-2.5 h-9 border-r-0  bg-bg_color_2;
+
+      .ant-select-selection-item {
+        @apply text-sm text-grey-9;
+      }
+    }
+  }
+  .ant-input {
+    flex: 4;
+  }
+}

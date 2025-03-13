@@ -1,4 +1,3 @@
-import CardSwiper from '@/features/common/card-swiper'
 import Box from '@/features/product/Box'
 import Title from '@/features/product/title'
 import { useMemo, useRef, useState } from 'react'
@@ -7,8 +6,15 @@ import { Tabs } from 'antd'
 import { ContactUsBorder } from '../talk-to-us'
 import { ImageAndText } from '../solutions/info-introduce'
 import { useHover, useInterval } from 'ahooks'
+import classNames from 'classnames'
 
-const HomeSolutionSwiper = () => {
+interface HomeSolutionSwiperProps {
+  className?: string
+  showLabel?: boolean
+  title?: string
+}
+
+const HomeSolutionSwiper = ({ className, showLabel = true, title }: HomeSolutionSwiperProps) => {
   const i18n = useTranslation('common')
   const dataSource = useMemo(() => {
     return [
@@ -103,12 +109,12 @@ const HomeSolutionSwiper = () => {
   }, 5000)
 
   return (
-    <Box className="lg:pt-20 !pb-10 bg-bg_color_2 cloud-tabs-wrapper tabs-wrapper-only-header">
+    <Box className={classNames('lg:pt-20 !pb-10 bg-bg_color_2 cloud-tabs-wrapper tabs-wrapper-only-header', className)}>
       <div ref={domRef}>
         <Title
           className="mb-10"
-          label={i18n.t('whale-delivery-system-028')}
-          title={i18n.t('pages_locale_index_891113')}
+          label={showLabel ? i18n.t('whale-delivery-system-028') : undefined}
+          title={title ?? i18n.t('pages_locale_index_891113')}
         ></Title>
         <Tabs
           activeKey={dataSource[activeIndex].title}

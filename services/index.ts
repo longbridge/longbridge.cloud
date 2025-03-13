@@ -1,10 +1,6 @@
 import { getBasenameLocale } from '@/utils/common'
 
-let host = 'https://m.longbridge.xyz/api/forward'
-
-if (process.env.PROXY === 'prod') {
-  host = 'https://m.lbctrl.com/api/forward'
-}
+const host = process.env.PROXY === 'prod' ? 'https://m.lbctrl.com/api/forward' : 'https://m.longbridge.xyz/api/forward'
 
 async function transformRes(res: any) {
   if (res.ok) {

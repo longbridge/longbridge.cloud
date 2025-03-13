@@ -1,0 +1,21 @@
+:local(.checkbox) {
+  &.ant-checkbox-wrapper {
+    @apply m-0;
+    + .ant-checkbox-wrapper {
+      @apply m-0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .ant-checkbox {
+      @apply hidden;
+    }
+
+    .ant-checkbox + span {
+      @apply px-4 py-2 border border-border_color rounded-full transition-all duration-150;
+    }
+    .ant-checkbox.ant-checkbox-checked + span {
+      @apply text-brand_color bg-[#F6EFFF];
+    }
+  }
+}

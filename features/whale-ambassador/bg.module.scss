@@ -1,0 +1,8 @@
+:local(.with-bg) {
+  background: url('https://assets.lbctrl.com/uploads/332dc58e-9ad6-4970-baf7-59e7f85ee061/bg.svg') left center/cover
+    no-repeat;
+  @media (min-width: 768px) {
+    background-position: right center;
+    background-size: contain;
+  }
+}

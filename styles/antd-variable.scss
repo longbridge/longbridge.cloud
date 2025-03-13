@@ -1,0 +1,30 @@
+html body {
+  // Primary color mapping to brand color
+  --ant-primary-color: var(--brand_color);
+  --ant-primary-color-hover: var(--brand_color_2);
+  --ant-primary-color-outline: #f4f3ff;
+  --ant-primary-color-active: var(--brand_color_3);
+
+  --ant-primary-1: #f4f3ff;
+  --ant-primary-2: var(--brand_color_3);
+  --ant-primary-3: var(--brand_color_3);
+  --ant-primary-4: var(--brand_color_3);
+  --ant-primary-5: var(--brand_color_2);
+  --ant-primary-6: var(--brand_color_2);
+  --ant-primary-7: var(--brand_color);
+  --ant-primary-5: var(--brand_color);
+
+  // Error color mapping
+  --ant-error-color: var(--error_color_1);
+
+  // Text colors
+  --ant-text-color: var(--text_color_1);
+  --ant-text-color-secondary: var(--text_color_2);
+  --ant-text-color-disabled: var(--disabled_color_1);
+
+  // Border color
+  --ant-border-color-base: var(--border_color);
+
+  // Background colors
+  --ant-background-color-base: var(--bg_color_1);
+}

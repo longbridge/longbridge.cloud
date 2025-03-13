@@ -1,13 +1,21 @@
 import classNames from 'classnames'
 import { CSSProperties, FC, ReactNode } from 'react'
 
-export const Block: FC<{ className?: string; style?: CSSProperties }> = ({ children, className, style }) => {
+interface BlockProps {
+  className?: string
+  style?: CSSProperties
+  children: ReactNode
+  as?: 'div' | 'section'
+}
+
+export const Block: FC<BlockProps> = ({ children, className, style, as = 'div' }) => {
+  const Component = as
   return (
-    <div className={classNames('main-container', className)} style={style}>
+    <Component className={classNames('main-container', className)} style={style}>
       <div className="py-10">
         <div className="main-content-width">{children}</div>
       </div>
-    </div>
+    </Component>
   )
 }
 

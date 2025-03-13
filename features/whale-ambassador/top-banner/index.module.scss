@@ -1,0 +1,17 @@
+:local(.top-banner-content) {
+  background: url('https://assets.lbctrl.com/uploads/b4d275c7-66d2-4f82-bbf0-cb6bc3fac2ff/home-bg-mobile.svg') bottom
+    120px right -10% / 334px 334px no-repeat;
+  @media (min-width: 768px) {
+    background: url('https://assets.lbctrl.com/uploads/52e103b6-6a43-4297-989d-5f305738f3c0/home-bg.svg') right 0px
+      center / 450px 450px no-repeat;
+  }
+}
+
+:local(.invited-top-banner) {
+  background: url('https://assets.lbctrl.com/uploads/49a32093-a031-4f5f-b6f8-e6d339bab82d/c4064eeab000d6b1ca8b87ea62bfeba4.png')
+    center center / cover no-repeat;
+  @media (min-width: 768px) {
+    background: url('https://assets.lbctrl.com/uploads/49a32093-a031-4f5f-b6f8-e6d339bab82d/c4064eeab000d6b1ca8b87ea62bfeba4.png')
+      center center / cover no-repeat;
+  }
+}

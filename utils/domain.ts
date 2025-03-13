@@ -1,0 +1,1 @@
+export const whaleHost = process.env.PROXY === 'prod' ? 'https://longbridgewhale.com' : 'https://cloud.longbridge.xyz'  

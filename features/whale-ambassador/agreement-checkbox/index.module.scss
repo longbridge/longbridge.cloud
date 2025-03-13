@@ -1,0 +1,25 @@
+:local(.checkbox) {
+  &.ant-checkbox-wrapper {
+    @apply text-text-color-2 w-full;
+  }
+  .ant-checkbox {
+    flex: 0 1 36px;
+    @apply rounded-full overflow-hidden scale-75;
+    .ant-checkbox-input {
+      @apply rounded-full w-4;
+    }
+    .ant-checkbox-inner {
+      @apply rounded-full;
+    }
+  }
+  .ant-checkbox + span {
+    @apply px-0;
+  }
+
+  .ant-checkbox-checked:after {
+    display: none;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner:after {
+    border-width: 1.5px;
+  }
+}

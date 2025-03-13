@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=3000",
-    "dev:prod": "PROXY=prod next dev --port=3000",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev --port=3000",
+    "dev:prod": "NODE_OPTIONS=--openssl-legacy-provider PROXY=prod next dev --port=3000",
     "build": "next build && next export && yarn normalize-asset-path",
     "normalize-asset-path": "node ./normalize-asset-path",
     "start": "next start",
@@ -17,19 +17,25 @@
     "@supabase/supabase-js": "^2.45.2",
     "ahooks": "^3.3.10",
     "antd": "4.23.3",
+    "axios": "^1.8.3",
     "classnames": "^2.3.1",
     "i18next": "^21.6.16",
     "i18next-browser-languagedetector": "^6.1.4",
+    "libphonenumber-js": "^1.12.5",
     "lodash": "^4.17.21",
+    "modern-screenshot": "^4.6.0",
     "next": "11.1.0",
     "next-i18next": "^11.0.0",
     "next-seo": "^5.4.0",
+    "qrcode.react": "^4.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-i18next": "^11.16.8",
+    "react-modal": "^3.16.3",
     "react-router-dom": "^6.3.0",
     "react-toastify": "^9.0.7",
     "swiper": "^8.1.4",
+    "ufo": "^1.5.4",
     "video.js": "^7.18.1"
   },
   "devDependencies": {
@@ -61,7 +67,8 @@
     "stripKeyPrefix": ""
   },
   "resolutions": {
-   "@types/react": "17.0.11",
+    "@types/react": "17.0.11",
     "@types/react-dom": "17.0.11"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
