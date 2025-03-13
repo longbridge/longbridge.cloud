@@ -1,0 +1,11 @@
+:local(.faq) {
+  .ant-collapse-icon-position-end > .ant-collapse-item > .ant-collapse-header {
+    @apply px-0;
+  }
+  .ant-collapse-ghost.ant-collapse-icon-position-end > .ant-collapse-item {
+    @apply py-6 md:py-8 border-b border-solid border-border_color;
+  }
+  .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    @apply px-0 pb-0 pt-4;
+  }
+}

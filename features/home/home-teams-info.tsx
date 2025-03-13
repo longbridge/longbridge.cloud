@@ -3,7 +3,11 @@ import { useMemo } from 'react'
 import Box from '@/features/product/Box'
 import Title from '@/features/product/title'
 
-const HomeTeamsInfo = () => {
+interface HomeTeamsInfoProps {
+  className?: string
+}
+
+const HomeTeamsInfo = ({ className }: HomeTeamsInfoProps) => {
   const i18n = useTranslation('common')
 
   const list = useMemo(() => {
@@ -42,7 +46,7 @@ const HomeTeamsInfo = () => {
   }, [])
 
   return (
-    <Box>
+    <Box className={className}>
       <>
         <Title title={i18n.t('features_home_home_teams_info_891151')} />
         <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6">

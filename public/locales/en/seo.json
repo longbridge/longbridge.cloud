@@ -118,5 +118,15 @@
     "title": "Wealth Management",
     "description": "WHALE provides one-stop products and solutions for brokers. All systems are based on cloud-native architecture. Join to get a lower cost and more competitive product experience. Pay only for what you need. ",
     "keywords": "WHALE, SaaS, Internet Securities, Securities Trading System, BSS Vendor, Broker Supplied System"
+  },
+  "whale-ambassador": {
+    "title": "Register as a Whale Ambassador",
+    "description": "Recommend your business partners to experience Whale's solutions: Internet App+ solution, HK Stock solution, US Stock & Option solution, Wealth Management solution, and Virtual Asset solution. Earn double rewards. Referral rewards start from 300 HKD, and the more you recommend, the more you earn. Signing rewards 10,000 HKD.",
+    "keywords": "WHALE, SaaS, Internet Securities, Securities Trading System, BSS Vendor, Broker Supplied System"
+  },
+  "whale-ambassador-invited": {
+    "title": "Invite you to experience Whale's solutions",
+    "description": "Whale's one-stop securities trading & wealth management solutions cover multiple markets and asset classes, including the Internet App+ solution, HK Stock solution, US Stock & Option solution, Wealth Management solution, and Virtual Asset solution. They offer comprehensive market data services, support automated core business processes such as trading - inquiry - settlement, and online services such as account opening, transfer, information, and trading. They are low-cost and high-efficiency solutions for driving trading growth.",
+    "keywords": "WHALE, SaaS, Internet Securities, Securities Trading System, BSS Vendor, Broker Supplied System"
   }
 }

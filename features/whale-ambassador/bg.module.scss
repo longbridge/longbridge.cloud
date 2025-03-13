@@ -1,0 +1,7 @@
+:local(.with-bg) {
+  background: url('https://pub.pbkrs.com/files/202307/P5TtXZEMWM4h37W2/bg-image2.png') left center/cover no-repeat;
+  @media (min-width: 768px) {
+    background-position: right center;
+    background-size: contain;
+  }
+}

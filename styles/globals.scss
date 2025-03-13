@@ -1,12 +1,13 @@
 @import 'tailwind.css';
 @import './theme.scss';
+@import './antd-variable.scss';
 
 /* 中文里面文字左右对齐 */
 html:not([lang='en']) {
   text-align: justify;
 }
 .main-container {
-  @apply px-6 xl:px-[100px];
+  @apply px-4 xl:px-[100px];
 }
 .main-content-width {
   @apply max-w-[1200px] mx-auto;
@@ -77,6 +78,16 @@ body {
   border-color: var(--brand_color);
   background: #fff;
 }
+
+.ant-btn.ant-btn-primary {
+  &:hover,
+  &:focus {
+    color: var(--front-bg-color-1);
+    border-color: var(--brand_color_2);
+    background: var(--brand_color_2);
+  }
+}
+
 .ant-checkbox-checked .ant-checkbox-inner {
   background-color: var(--brand_color);
   border-color: var(--brand_color);
@@ -137,6 +148,29 @@ body {
   .ant-btn:hover,
   .ant-btn:focus {
     color: #ffffff;
+  }
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  &.ant-btn-primary {
+    border-color: var(--ant-primary-color);
+    background: var(--ant-primary-color);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  }
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  &.ant-btn-primary:disabled {
+    color: var(--text-color-2);
+    background-color: var(--tag-bg-color);
+    border-color: var(--tag-bg-color);
   }
 }
 
