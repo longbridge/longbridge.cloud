@@ -101,7 +101,7 @@ export const IndexBanner = () => {
   }
   return (
     <Carousel className="bg-cover" autoplay effect="fade">
-      <TopBlock
+      {/* <TopBlock
         className="relative bg-center bg-no-repeat"
         imageUrl="https://assets.lbctrl.com/uploads/88cd3d2c-343f-49e1-a236-aa9ef8eecb96/zero.png"
       >
@@ -197,7 +197,6 @@ export const IndexBanner = () => {
                   >
                     {i18n.t('talk-to-us')}
                   </Button>
-                  {/* <ContactUs /> */}
                 </div>
                 <div className="absolute self-end text-sm font-thin text-front-bg-color-1 bottom-4 right-4 left-4 md:relative md:-bottom-10 xl:-bottom-20 md:left-0">
                   <sup>*</sup>
@@ -207,7 +206,7 @@ export const IndexBanner = () => {
             }
           ></BlockBetween>
         </Block>
-      </TopBlock>
+      </TopBlock> */}
       <TopBlock className="bg-repeat-round bg-[#0B0550] relative">
         <Block>
           <BlockBetween
