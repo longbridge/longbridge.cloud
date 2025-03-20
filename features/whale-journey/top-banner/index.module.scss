@@ -1,0 +1,22 @@
+:local(.top-banner) {
+  background: url('https://assets.lbctrl.com/uploads/1762a20c-43cc-4c84-9094-061990489012/85e1d887985bfb93bd02fb1c9051c879.svg')
+      center/cover no-repeat,
+    linear-gradient(90deg, #3c1c95 0%, #2f1675 5.15%, #1a0c42 9.23%, #0c051e 16.57%, #030108 39.7%, #000000 57%);
+}
+
+:local(.top-banner-image) {
+  background: url('https://assets.lbctrl.com/uploads/3d1a4dd8-cadd-4676-9fc9-245718c3f520/03f60967bfe7ea0107ae049276e4a7e5.png')
+    center/ 750px no-repeat;
+}
+
+:local(.top-banner-container) {
+  @media screen and (max-width: 768px) {
+    background: url('https://assets.lbctrl.com/uploads/3d1a4dd8-cadd-4676-9fc9-245718c3f520/03f60967bfe7ea0107ae049276e4a7e5.png')
+      top 80px center/ 720px no-repeat;
+  }
+}
+
+:local(.journey-banner-container) {
+  background: url('https://assets.lbctrl.com/uploads/5a6e2c0e-2e99-4c8e-8231-d3dd38972245/banner-bg.png') center center /
+    100% 100% repeat;
+}

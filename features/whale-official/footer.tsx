@@ -4,11 +4,15 @@ import ExperienceDemo from '@/features/experience-demo'
 import { useTranslation } from 'next-i18next'
 import React from 'react'
 import Box from '../product/Box'
+import classNames from 'classnames'
+interface WhaleOfficialFooterNewProps {
+  className?: string
+}
 
-export const WhaleOfficialFooterNew: React.FC = () => {
+export const WhaleOfficialFooterNew: React.FC<WhaleOfficialFooterNewProps> = ({ className }) => {
   const i18n = useTranslation('common')
   return (
-    <Box className="py-[60px] border-y border-border_color">
+    <Box className={classNames('py-[60px] border-y border-border_color', className)}>
       <div className="lg:flex items-center justify-between">
         <div className="mb-4 lg:mb-0 lg:mr-20">
           <h3 className="font-semibold text-2xl mb-3">{i18n.t('features_whale_official_footer_891125')}</h3>
