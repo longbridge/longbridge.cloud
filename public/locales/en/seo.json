@@ -125,8 +125,13 @@
     "keywords": "WHALE, SaaS, Internet Securities, Securities Trading System, BSS Vendor, Broker Supplied System"
   },
   "whale-ambassador-invited": {
-    "title": "Invite you to experience Whale's solutions",
-    "description": "Whale's one-stop securities trading & wealth management solutions cover multiple markets and asset classes, including the Internet App+ solution, HK Stock solution, US Stock & Option solution, Wealth Management solution, and Virtual Asset solution. They offer comprehensive market data services, support automated core business processes such as trading - inquiry - settlement, and online services such as account opening, transfer, information, and trading. They are low-cost and high-efficiency solutions for driving trading growth.",
+    "title": "Whale’s Journey: Powering Innovation & Scalable Growth for Brokers & Wealth Managers",
+    "description": "Discover how Longbridge Whale drives digital innovation for brokerage firms, EAMs, family offices and UHNWIs with scalable trading systems, AI-driven tools, and multi-market multi-asset solutions. Trusted by industry leaders for U.S. stock & option trading, risk control, and client success. ",
+    "keywords": "WHALE, SaaS, Internet Securities, Securities Trading System, BSS Vendor, Broker Supplied System"
+  },
+  "whale-journey": {
+    "title": "Grow Together Beyond Limits",
+    "description": "WHALE provides one-stop products and solutions for brokers. All systems are based on cloud-native architecture. Join to get a lower cost and more competitive product experience. Pay only for what you need. ",
     "keywords": "WHALE, SaaS, Internet Securities, Securities Trading System, BSS Vendor, Broker Supplied System"
   }
 }

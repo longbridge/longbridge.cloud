@@ -1807,5 +1807,12 @@
   "whale-ambassador.invited-form.description": "Please fill in your company information, and the Whale team will contact you as soon as possible.",
   "whale-ambassador.top-banner.invited.success": "You’ve scheduled an appointment with Whale",
   "whale-ambassador.top-banner.invited.success-description": "We’ll reach out as soon as possible.",
-  "whale-ambassador.invited-reward-details": "Invite friends as Whale Ambassador"
+  "whale-ambassador.invited-reward-details": "Invite friends as Whale Ambassador",
+  "whale-journey.banner.title1": "Whale’s Journey",
+  "whale-journey.banner.title2": "Grow together beyond limits",
+  "whale-journey.banner.description": "Fuelled by clients' trust and recognition, Whale is driving innovation to reshape growth for brokers and wealth managers.",
+  "whale-journey.banner.button": "Read More",
+  "whale-journey.top-banner.journey.title1": "Whale’s journey",
+  "whale-journey.top-banner.journey.title2": "Grow together beyond limits",
+  "whale-journey.top-banner.journey.description": "Fuelled by clients' trust and recognition, Whale is driving innovation to reshape growth for brokers and wealth managers."
 }

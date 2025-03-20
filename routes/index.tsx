@@ -35,6 +35,7 @@ import WhaleAmbassador from '@/pages/[locale]/whale-ambassador'
 import WhaleAmbassadorInvited from '@/pages/[locale]/whale-ambassador/invited'
 import WhaleAmbassadorInvitedSuccess from '@/pages/[locale]/whale-ambassador/invited-success'
 import WhaleAmbassadorPoster from '@/pages/[locale]/whale-ambassador/poster'
+import WhaleJourney from '@/pages/[locale]/whale-journey'
 
 export const RouteList = ({ pageProps }: { pageProps: any }) => {
   return (
@@ -83,6 +84,7 @@ export const RouteList = ({ pageProps }: { pageProps: any }) => {
                 path="whale-ambassador/invited-success"
                 element={<WhaleAmbassadorInvitedSuccess {...pageProps} />}
               />
+              <Route path="whale-journey" element={<WhaleJourney {...pageProps} />} />
             </Route>
           </Fragment>
         )
