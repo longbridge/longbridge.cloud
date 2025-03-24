@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next'
 import styles from './index.module.scss'
 import classNames from 'classnames'
 import { LocaleLink } from '@/components/locale-link'
+import Button from '@/components/button'
 
 export const GrowTogetherTopBanner = () => {
   const { t, i18n } = useTranslation('common')
@@ -43,9 +44,11 @@ export const GrowTogetherTopBanner = () => {
                   <span className="whitespace-pre-wrap break-words">{t('whale-journey.banner.description')}</span>
                 </div>
                 <div className="mt-12 mb-9 flex justify-center md:justify-start">
-                  <button className=" text-2xl  font-bold text-[#FFD89E] border-[#FFD89E] border bg-transparent py-1 px-11">
-                    <LocaleLink to={`/whale-journey`}>{t('whale-journey.banner.button')}</LocaleLink>
-                  </button>
+                  <LocaleLink to={`/whale-journey`}>
+                    <button className=" text-2xl  font-bold text-[#FFD89E] border-[#FFD89E] hover:border-front-bg-color1  hover:text-front-bg-color1  border bg-transparent py-1 px-11">
+                      {t('whale-journey.banner.button')}
+                    </button>
+                  </LocaleLink>
                 </div>
               </div>
             </div>
