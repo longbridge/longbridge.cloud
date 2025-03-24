@@ -2,9 +2,7 @@ name: Deploy Canary
 on:
   push:
     branches:
-      - main
       - canary
-      - feat/live
 jobs:
   deploy_canary:
     name: build

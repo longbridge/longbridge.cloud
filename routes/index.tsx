@@ -31,6 +31,7 @@ import SmallBrokeragesPage from '@/pages/[locale]/solutions/small-brokerages'
 import UsStock from '@/pages/[locale]/solutions/us-stock'
 import SolutionWealthManagement from '@/pages/[locale]/solutions/wealth-management'
 import WealthManagement from '@/pages/[locale]/wealth-management'
+import WhaleJourney from '@/pages/[locale]/whale-journey'
 
 export const RouteList = ({ pageProps }: { pageProps: any }) => {
   return (
@@ -72,6 +73,7 @@ export const RouteList = ({ pageProps }: { pageProps: any }) => {
               <Route path="solutions/wealth-management" element={<SolutionWealthManagement {...pageProps} />} />
               <Route path="wealth-management" element={<WealthManagement {...pageProps} />} />
               <Route path="jobs" element={<Jobs {...pageProps} />} />
+              <Route path="whale-journey" element={<WhaleJourney {...pageProps} />} />
             </Route>
           </Fragment>
         )

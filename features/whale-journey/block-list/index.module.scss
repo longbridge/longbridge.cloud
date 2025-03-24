@@ -1,0 +1,12 @@
+:local(.block) {
+  @media screen and (min-width: 768px) {
+    &:nth-child(even) {
+      background: url('https://assets.lbctrl.com/uploads/bb3b73a7-05cb-476d-9003-ff5624bb8c8f/fe24d57de735ca050c64d455fca0a881.svg')
+        center center / cover no-repeat;
+    }
+    &.block-2 {
+      background: url('https://assets.lbctrl.com/uploads/1974d6fb-b0f5-415d-ac10-cab388ce1ee4/bg.png') center center /
+        100% 100% repeat;
+    }
+  }
+}

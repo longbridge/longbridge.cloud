@@ -8,6 +8,7 @@ import 'antd/dist/antd.css'
 import { useTranslation } from 'next-i18next'
 import classNames from 'classnames'
 import { getContactFormUrl } from '@/utils/common'
+import { GrowTogetherTopBanner } from '@/features/whale-journey/top-banner'
 
 export const BG_BANNER = 'https://pub.pbkrs.com/files/202207/g1pGdC8PkwxTaqmw/trading_platform.png'
 const IMAGE_URL = 'https://pub.pbkrs.com/files/202207/Ggr6CvK2f2jWASHe/Group_427318855.png'
@@ -296,6 +297,7 @@ export const IndexBanner = () => {
           ></BlockBetween>
         </Block>
       </TopBlock> */}
+      <GrowTogetherTopBanner />
     </Carousel>
   )
 }

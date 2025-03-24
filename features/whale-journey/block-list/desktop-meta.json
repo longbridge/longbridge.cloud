@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/f3c58521-a933-43ef-8372-af1c2236f631/en-w01.png",
+        "width": 2398,
+        "height": 1600,
+        "ratio": 1.49875
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/e986cb38-02bc-456e-b693-30607358ad7f/zh-cn-w01.png",
+        "width": 2400,
+        "height": 1392,
+        "ratio": 1.7241379310344827
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/54642659-9e18-4505-8bab-833fd24ef37c/zh-hk-w01.png",
+        "width": 2062,
+        "height": 1381,
+        "ratio": 1.4931209268645909
+      }
+    }
+  },
+  {
+    "id": 2,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/84261a94-a9f7-48db-aa19-fc92b7713cdb/en-w02.png",
+        "width": 2400,
+        "height": 864,
+        "ratio": 2.7777777777777777
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/1259b48b-39dc-4ef7-bc26-7df23947c6fa/zh-cn-w02.png",
+        "width": 2400,
+        "height": 772,
+        "ratio": 3.1088082901554404
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/cabb134a-d36d-4050-9ed9-e8a28610149e/zh-hk-w02.png",
+        "width": 2356,
+        "height": 750,
+        "ratio": 3.1413333333333333
+      }
+    }
+  },
+  {
+    "id": 3,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/7a5663c9-a969-4ec0-b785-d57e9bf4dd96/en-w03.png",
+        "width": 2400,
+        "height": 988,
+        "ratio": 2.42914979757085
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/ac01bc1d-f4e6-4c6a-a097-520f7af007fd/zh-cn-w03.png",
+        "width": 2400,
+        "height": 986,
+        "ratio": 2.4340770791075053
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/48f5596e-58b6-4bde-a0af-aa1fdf3d52c9/zh-hk-w03.png",
+        "width": 2400,
+        "height": 996,
+        "ratio": 2.4096385542168677
+      }
+    }
+  },
+  {
+    "id": 4,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/18031167-9114-4ebb-ab20-9ddda4eb3633/en-w04.png",
+        "width": 2400,
+        "height": 1038,
+        "ratio": 2.3121387283236996
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/245f7ab1-aead-42bd-be99-7cf5d4256377/zh-cn-w04.png",
+        "width": 2400,
+        "height": 1014,
+        "ratio": 2.366863905325444
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/d43bfb57-a781-473a-bec4-074bcebe5705/zh-hk-w04.png",
+        "width": 2400,
+        "height": 1010,
+        "ratio": 2.376237623762376
+      }
+    }
+  },
+  {
+    "id": 5,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/bad26a2d-1e27-4014-9de8-c40c2fa6d02e/en-w05.png",
+        "width": 2400,
+        "height": 1266,
+        "ratio": 1.8957345971563981
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/a5f0b623-f5c3-464b-81ed-e82cec11f149/zh-cn-w05.png",
+        "width": 2400,
+        "height": 1272,
+        "ratio": 1.8867924528301887
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/59b8ed23-8d3d-4f23-b433-4ad298c39ff6/zh-hk-w05.png",
+        "width": 2400,
+        "height": 1220,
+        "ratio": 1.9672131147540983
+      }
+    }
+  },
+  {
+    "id": 6,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/68facab4-92cb-4aee-973f-de02e1f55584/en-w06.png",
+        "width": 2400,
+        "height": 930,
+        "ratio": 2.5806451612903225
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/8b5d8ef9-ae43-41fd-8f93-c5e96c9ee390/zh-cn-w06.png",
+        "width": 2400,
+        "height": 844,
+        "ratio": 2.843601895734597
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/6462222b-4825-443e-8f67-46dd6c33026e/zh-hk-w06.png",
+        "width": 2400,
+        "height": 836,
+        "ratio": 2.8708133971291865
+      }
+    }
+  },
+  {
+    "id": 7,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/695fd795-1797-41a5-812a-a1812d76b208/en-w07.png",
+        "width": 2400,
+        "height": 1110,
+        "ratio": 2.1621621621621623
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/4a5fc65c-9e04-4d12-9ed5-b45971494820/zh-cn-w07.png",
+        "width": 2400,
+        "height": 1144,
+        "ratio": 2.097902097902098
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/03ade90b-0dd2-4d38-be54-d5f06732c9d4/zh-hk-w07.png",
+        "width": 2400,
+        "height": 1162,
+        "ratio": 2.0654044750430294
+      }
+    }
+  },
+  {
+    "id": 8,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/a0001592-1c2f-4261-bc94-43f661408457/en-w08.png",
+        "width": 2338,
+        "height": 798,
+        "ratio": 2.9298245614035086
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/b1bf3d9e-d9d7-4d47-86d8-93d8483dabc5/zh-cn-w08.png",
+        "width": 2400,
+        "height": 1024,
+        "ratio": 2.34375
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/41b1a578-ef77-411d-9d52-954ccb39676d/zh-hk-w08.png",
+        "width": 2400,
+        "height": 1046,
+        "ratio": 2.294455066921606
+      }
+    }
+  },
+  {
+    "id": 9,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/e3327d47-925f-411e-9aaf-6238d4decede/en-w09.png",
+        "width": 2122,
+        "height": 860,
+        "ratio": 2.4674418604651165
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/5ad01eaa-9381-450d-a092-e4e2a17aa779/zh-cn-w09.png",
+        "width": 2400,
+        "height": 794,
+        "ratio": 3.022670025188917
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/39bb1559-fddc-4acd-9324-69b92f91a1b1/zh-hk-w09.png",
+        "width": 2400,
+        "height": 794,
+        "ratio": 3.022670025188917
+      }
+    }
+  },
+  {
+    "id": 10,
+    "source": {
+      "en": {
+        "url": "https://assets.lbctrl.com/uploads/0e5f2bae-20e3-4aae-89ef-00786c3c1093/en-w10.png",
+        "width": 2400,
+        "height": 1518,
+        "ratio": 1.5810276679841897
+      },
+      "zh-CN": {
+        "url": "https://assets.lbctrl.com/uploads/73b903c5-7a67-42e8-ad6e-f025217c29ad/zh-cn-w10.png",
+        "width": 2400,
+        "height": 1390,
+        "ratio": 1.7266187050359711
+      },
+      "zh-HK": {
+        "url": "https://assets.lbctrl.com/uploads/95e5ea04-7081-4e7d-a7c6-d47774c84a62/zh-hk-w10.png",
+        "width": 2400,
+        "height": 1390,
+        "ratio": 1.7266187050359711
+      }
+    }
+  }
+]
