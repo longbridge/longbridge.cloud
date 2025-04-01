@@ -6,11 +6,8 @@ import { getInviteLink } from '../utils'
 import { Modal, ModalProps } from '../../modal'
 import { domToBlob } from 'modern-screenshot'
 import { toast } from 'react-toastify'
-import { WhaleReferrerService } from '@/services/whale-ambassador/index'
-import { useSearchParams } from 'react-router-dom'
 import { isServer } from '@/utils/common'
 import { useTranslation } from 'next-i18next'
-import { useLocaleNavigate } from '@/hooks/use-locale-navigate'
 import styles from './index.module.scss'
 interface SharePosterProps {
   className?: string
@@ -186,33 +183,5 @@ export const SharePosterModal = ({ className, onClose, name, code, open }: Share
         )}
       </div>
     </Modal>
-  )
-}
-
-export const SharePosterPanel = () => {
-  const [searchParams] = useSearchParams()
-  const code = searchParams.get('code')
-  const [name, setName] = useState('')
-  const { t } = useTranslation('common')
-
-  useEffect(() => {
-    if (code) {
-      WhaleReferrerService.getNameByCode({ code: code }).then(res => {
-        setName(res.data.name)
-      })
-    }
-  }, [code])
-
-  return (
-    <div className={classNames('py-10 md:py-20 flex min-h-[600px] justify-center bg-[#eeeeee]')}>
-      <div>
-        {code && <SharePoster name={name} code={code!} />}
-        <div className="pt-5 ">
-          <Button type="primary" block className="py-2.5 h-auto" onClick={() => savePoster(t)}>
-            {t('whale-ambassador.save-invite-poster')}
-          </Button>
-        </div>
-      </div>
-    </div>
   )
 }
