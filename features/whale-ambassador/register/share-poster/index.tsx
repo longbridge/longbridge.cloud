@@ -102,7 +102,7 @@ export const SharePoster = ({ className, name, code }: SharePosterProps) => {
             {/* 二维码占位 */}
             <QRCodeSVG
               size={48}
-              level="M"
+              level="L"
               imageSettings={{
                 src: 'https://assets.whalesit.xyz/uploads/36892d9e-fdcb-4bcb-bc30-c7719c857997/logo.svg',
                 x: undefined,
@@ -202,6 +202,8 @@ export const SharePosterPanel = () => {
       })
     }
   }, [code])
+
+  console.log('code', code)
 
   return (
     <div className={classNames('py-10 md:py-20 flex justify-center bg-[#eeeeee]')}>
