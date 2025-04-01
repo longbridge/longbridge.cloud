@@ -190,16 +190,10 @@ export const SharePosterModal = ({ className, onClose, name, code, open }: Share
 }
 
 export const SharePosterPanel = () => {
-  const { t } = useTranslation('common')
   const [searchParams] = useSearchParams()
   const code = searchParams.get('code')
   const [name, setName] = useState('')
-
-  const navigateToPoster = useLocaleNavigate()
-
-  const handleClose = () => {
-    navigateToPoster('/whale-ambassador')
-  }
+  const { t } = useTranslation('common')
 
   useEffect(() => {
     if (code) {
@@ -209,5 +203,16 @@ export const SharePosterPanel = () => {
     }
   }, [code])
 
-  return <SharePosterModal open={true} onClose={handleClose} name={name} code={code!} />
+  return (
+    <div className={classNames('py-10 md:py-20 flex justify-center bg-[#eeeeee]')}>
+      <div>
+        <SharePoster name={name} code={code!} />
+        <div className="pt-5 ">
+          <Button type="primary" block className="py-2.5 h-auto" onClick={() => savePoster(t)}>
+            {t('whale-ambassador.save-invite-poster')}
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
 }
