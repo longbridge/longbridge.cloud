@@ -102,7 +102,7 @@ export const SharePoster = ({ className, name, code }: SharePosterProps) => {
             {/* 二维码占位 */}
             <QRCodeSVG
               size={48}
-              level="L"
+              level="H"
               imageSettings={{
                 src: 'https://assets.whalesit.xyz/uploads/36892d9e-fdcb-4bcb-bc30-c7719c857997/logo.svg',
                 x: undefined,
