@@ -102,7 +102,7 @@ export const SharePoster = ({ className, name, code }: SharePosterProps) => {
             {/* 二维码占位 */}
             <QRCodeSVG
               size={48}
-              level="H"
+              level="M"
               imageSettings={{
                 src: 'https://assets.whalesit.xyz/uploads/36892d9e-fdcb-4bcb-bc30-c7719c857997/logo.svg',
                 x: undefined,
@@ -203,12 +203,10 @@ export const SharePosterPanel = () => {
     }
   }, [code])
 
-  console.log('code', code)
-
   return (
-    <div className={classNames('py-10 md:py-20 flex justify-center bg-[#eeeeee]')}>
+    <div className={classNames('py-10 md:py-20 flex min-h-[600px] justify-center bg-[#eeeeee]')}>
       <div>
-        <SharePoster name={name} code={code!} />
+        {code && <SharePoster name={name} code={code!} />}
         <div className="pt-5 ">
           <Button type="primary" block className="py-2.5 h-auto" onClick={() => savePoster(t)}>
             {t('whale-ambassador.save-invite-poster')}
