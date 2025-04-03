@@ -10,7 +10,6 @@ import { WhaleReferrerService } from '@/services/whale-ambassador'
 import { InvitedTopBanner } from '@/features/whale-ambassador/top-banner/invited'
 import HomeTeamsInfo from '@/features/home/home-teams-info'
 import HomeSolutionSwiper from '@/features/home/home-solution-swiper'
-import { BrokeragesQuotes } from '@/features/whale-ambassador/brokerages-quotes'
 import { InvitedFooter } from '@/features/whale-ambassador/invited-footer'
 import HomeNewExamples from '@/features/home/home-examples'
 

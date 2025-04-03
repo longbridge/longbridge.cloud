@@ -10,6 +10,7 @@ import { RewardDetails } from '@/features/whale-ambassador/reward-details'
 import { HowToParticipate } from '@/features/whale-ambassador/how-to-participate'
 import { FAQ } from '@/features/whale-ambassador/faq'
 import { Declaration } from '@/features/whale-ambassador/declaration'
+
 export const getStaticPaths = () => ({
   fallback: false,
   paths: i18nPaths(),

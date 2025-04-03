@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next'
 import classNames from 'classnames'
 import { getContactFormUrl } from '@/utils/common'
 import { GrowTogetherTopBanner } from '@/features/whale-journey/top-banner'
-
+import { WhaleAmbassadorTopBanner } from '@/features/whale-ambassador/top-banner/home-banner'
 export const BG_BANNER = 'https://pub.pbkrs.com/files/202207/g1pGdC8PkwxTaqmw/trading_platform.png'
 const IMAGE_URL = 'https://pub.pbkrs.com/files/202207/Ggr6CvK2f2jWASHe/Group_427318855.png'
 
@@ -100,7 +100,7 @@ export const IndexBanner = () => {
     'zh-HK': 'https://assets.lbctrl.com/uploads/ca6da519-38f0-4291-89d7-79a76cef327c/sc_tc.png',
   }
   return (
-    <Carousel className="bg-cover" autoplay effect="fade">
+    <Carousel className="bg-cover" autoplay adaptiveHeight effect="fade">
       {/* <TopBlock
         className="relative bg-center bg-no-repeat"
         imageUrl="https://assets.lbctrl.com/uploads/88cd3d2c-343f-49e1-a236-aa9ef8eecb96/zero.png"
@@ -297,6 +297,7 @@ export const IndexBanner = () => {
         </Block>
       </TopBlock> */}
       <GrowTogetherTopBanner />
+      <WhaleAmbassadorTopBanner />
     </Carousel>
   )
 }

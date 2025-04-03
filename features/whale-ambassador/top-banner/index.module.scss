@@ -14,6 +14,19 @@ $top-banner-bg-color: #0c094f;
   }
 }
 
+:local(.home-top-banner) {
+  background: bottom 0% center / 180% auto no-repeat url($top-banner-bg-image), $top-banner-bg-color;
+  @media (min-width: 440px) {
+    background: bottom 0px center / 835px auto no-repeat url($top-banner-bg-image), $top-banner-bg-color;
+  }
+
+  @media (min-width: 768px) {
+    background: right calc(calc(max(calc(100vw - 1200px), 0px) / 2) - 200px) center / contain no-repeat
+        url($top-banner-bg-image),
+      $top-banner-bg-color;
+  }
+}
+
 :local(.invited-top-banner) {
   background: url('https://assets.lbctrl.com/uploads/cebdd4b6-9582-48f5-9025-8ef3a0d6059d/bg2.png') center center /
     cover no-repeat;

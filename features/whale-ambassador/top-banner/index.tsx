@@ -5,6 +5,7 @@ import { SendInviteLink } from '../register/send-invite-link'
 import { useTranslation } from 'next-i18next'
 import classNames from 'classnames'
 import styles from './index.module.scss'
+
 export const TopBanner = () => {
   const { t } = useTranslation('common')
   return (
@@ -22,6 +23,7 @@ export const TopBanner = () => {
                     {t('whale-ambassador.program-subtitle')}
                   </p>
                   <BecomeAmbassadorButton
+                    enableAutoOpen
                     form="推荐官计划主页"
                     className="px-4 py-2.5 h-auto font-medium  text-sm  lg:text-base mt-6 lg:mt-10"
                     type="primary"
