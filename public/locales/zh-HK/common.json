@@ -1839,5 +1839,16 @@
   "whale-ambassador.invited-form.description": "填寫企業信息，Whale 專家會盡快與你取得聯繫",
   "whale-ambassador.top-banner.invited.success": "預約成功！",
   "whale-ambassador.top-banner.invited.success-description": "感謝您的登記，我們會盡快與您聯絡確認需求。",
-  "whale-ambassador.invited-reward-details": "成為 Whale 推薦官，邀請更多好友參與"
+  "whale-ambassador.invited-reward-details": "成為 Whale 推薦官，邀請更多好友參與",
+  "whale-ambassador.home-banner.title": "<highlight>WHALE</highlight> 推薦官",
+  "whale-ambassador.home-banner.subtitle": "推薦身邊企業 · <highlight>賺雙重獎賞</highlight>",
+  "whale-ambassador.home-banner.signing-reward": "簽約獎勵價值",
+  "whale-ambassador.home-banner.reward-value": "10,000",
+  "whale-ambassador.home-banner.currency": "HKD",
+  "whale-ambassador.home-banner.referral-reward": "推薦獎勵價值",
+  "whale-ambassador.home-banner.lead-value": "300",
+  "whale-ambassador.home-banner.double-rewards": "≥ 3 個 <highlight>獎勵翻倍</highlight>",
+  "whale-ambassador.home-banner.learn-more": "了解更多",
+  "whale-ambassador.home-banner.sign-up": "成為推薦官",
+  "whale-ambassador.home-banner.terms": "*受條款及細則約束。"
 }

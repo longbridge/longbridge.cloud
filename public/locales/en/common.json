@@ -1828,5 +1828,17 @@
   "whale-journey.banner.button": "Read More",
   "whale-journey.top-banner.journey.title1": "Whale’s journey",
   "whale-journey.top-banner.journey.title2": "Grow together beyond limits",
-  "whale-journey.top-banner.journey.description": "Fuelled by clients' trust and recognition, Whale is driving innovation to reshape growth for brokers and wealth managers."
+  "whale-journey.top-banner.journey.description": "Fuelled by clients' trust and recognition, Whale is driving innovation to reshape growth for brokers and wealth managers.",
+  "whale-ambassador.home-banner.title": "WHALE AMBASSADOR",
+  "whale-ambassador.home-banner.subtitle": "Earn Big with Every Referral",
+  "whale-ambassador.home-banner.signing-reward": "Signing Reward",
+  "whale-ambassador.home-banner.reward-value": "1,800",
+  "whale-ambassador.home-banner.currency": "SGD",
+  "whale-ambassador.home-banner.referral-reward": "Referral Reward",
+  "whale-ambassador.home-banner.per-lead": " / Per Lead",
+  "whale-ambassador.home-banner.lead-value": "50",
+  "whale-ambassador.home-banner.double-rewards": "≥ 3 Leads <highlight>Double Rewards</highlight>",
+  "whale-ambassador.home-banner.learn-more": "Learn more",
+  "whale-ambassador.home-banner.sign-up": "Sign up now",
+  "whale-ambassador.home-banner.terms": "*T&C apply."
 }

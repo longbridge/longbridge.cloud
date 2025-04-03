@@ -2,6 +2,16 @@
 @import './theme.scss';
 @import './antd-variable.scss';
 
+@font-face {
+  font-weight: normal;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  src: url('https://pub.pbkrs.com/files/202108/E8KX9y9DoK9knQAK/Cera-Pro-Medium.eot');
+  src: url('https://pub.pbkrs.com/files/202108/E8KX9y9DoK9knQAK/Cera-Pro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://pub.pbkrs.com/files/202108/hvSMubmeZbebWhof/Cera-Pro-Medium.woff2') format('woff2'),
+    url('https://pub.pbkrs.com/files/202108/VJPsvc5h1xK2KhjX/Cera-Pro-Medium.woff') format('woff');
+}
+
 :root {
   interpolate-size: allow-keywords; /* 👈 */
 }

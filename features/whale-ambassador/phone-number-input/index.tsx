@@ -123,7 +123,6 @@ export const PhoneNumberInput = (props: PhoneNumberInputProps) => {
   useEffect(() => {
     fetchCountryCodeMap().then(data => {
       setCountryCodeList(data)
-      console.log(navigator.language)
     })
   }, [])
 

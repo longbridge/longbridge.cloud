@@ -3,13 +3,12 @@ import { useTranslation } from 'next-i18next'
 import styles from './index.module.scss'
 import classNames from 'classnames'
 import { LocaleLink } from '@/components/locale-link'
-import Button from '@/components/button'
 
 export const GrowTogetherTopBanner = () => {
   const { t, i18n } = useTranslation('common')
 
   return (
-    <TopBlock className={classNames(styles['top-banner'], 'h-[780px]  md:h-[537px]')}>
+    <TopBlock className={classNames(styles['top-banner'], 'h-[780px]  lg:h-[530px]')}>
       <div className={classNames('main-container', 'h-full', styles['top-banner-container'])}>
         <div className={classNames('py-10 h-full')}>
           <div className="main-content-width h-full">
