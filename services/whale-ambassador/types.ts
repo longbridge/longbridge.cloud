@@ -25,7 +25,8 @@ export interface Referrer {
   email: string
   code: string
   note?: string
-  vcode: string // 验证码
+  vcode: string
+  source_from?: string
 }
 
 // 被推荐人信息

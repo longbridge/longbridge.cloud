@@ -8,6 +8,7 @@ import classNames from 'classnames'
 import styles from './form.module.scss'
 import { useTranslation, Trans } from 'next-i18next'
 import { PrivacyAgreement } from './privacy-agreement'
+import { useSearchParams } from 'react-router-dom'
 
 interface RegisterFromProps {
   onSuccess?: (values: Referrer) => void
@@ -19,6 +20,8 @@ export const RegisterFrom = (props: RegisterFromProps) => {
   const [loading, setLoading] = useState(false)
   const [agreePrivacy, setAgreePrivacy] = useState(false)
   const { t } = useTranslation('common')
+  const [searchParams] = useSearchParams()
+  const sourceFrom = searchParams.get('source_from')
 
   const handleFinish = async () => {
     setLoading(true)
@@ -26,7 +29,7 @@ export const RegisterFrom = (props: RegisterFromProps) => {
       const values = await form.validateFields()
       const {
         data: { code },
-      } = await WhaleReferrerService.joinReferrer(values)
+      } = await WhaleReferrerService.joinReferrer({ ...values, source_from: sourceFrom ?? undefined })
       onSuccess?.({ ...values, code })
       setAgreePrivacy(false)
     } finally {

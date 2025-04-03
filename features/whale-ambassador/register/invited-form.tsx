@@ -15,6 +15,7 @@ import { Modal } from '../modal'
 import { Block } from '../block'
 import { useNavigate } from 'react-router-dom'
 import { withQuery } from 'ufo'
+import { withKeepQueryPath } from '@/utils/local-path'
 
 interface InvitedFormProps {
   onSuccess?: (values: Referee) => void
@@ -73,7 +74,9 @@ export const InvitedForm = ({
       form.resetFields()
       setShareEmail(false)
       setAgreePrivacy(false)
-      navigate(withQuery(`/${i18n.language}/whale-ambassador/invited-success`, { code: referCode, name: referrerName }))
+      navigate(
+        withKeepQueryPath(`/${i18n.language}/whale-ambassador/invited-success`, { code: referCode, name: referrerName })
+      )
     } finally {
       setLoading(false)
     }
