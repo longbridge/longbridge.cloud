@@ -34,8 +34,8 @@ export const RegisterFormModal = (props: RegisterFormModalProps) => {
       <SharePosterModal
         open={action === 'share'}
         onClose={() => setAction(undefined)}
-        name={referrer?.name!}
-        code={referrer?.code!}
+        name={referrer?.name}
+        code={referrer?.code}
       />
     </Modal>
   )

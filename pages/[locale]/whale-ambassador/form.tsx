@@ -12,6 +12,7 @@ import { Modal } from '@/features/whale-ambassador/modal'
 import { RecommendForm } from '@/features/whale-ambassador/register/recommend-from'
 import { useLocaleNavigate } from '@/hooks/use-locale-navigate'
 import { useSearchParams } from 'react-router-dom'
+import { withKeepQueryPath } from '@/utils/local-path'
 
 export const getStaticPaths = () => ({
   fallback: false,
@@ -33,7 +34,7 @@ const WhaleAmbassadorForm = () => {
   const navigateToPoster = useLocaleNavigate()
 
   const handleClose = () => {
-    navigateToPoster('/whale-ambassador')
+    navigateToPoster(withKeepQueryPath('/whale-ambassador'))
   }
 
   return (

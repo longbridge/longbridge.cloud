@@ -25,7 +25,8 @@ export interface Referrer {
   email: string
   code: string
   note?: string
-  vcode: string // 验证码
+  vcode: string
+  source_from?: string
 }
 
 // 被推荐人信息
@@ -50,9 +51,12 @@ export interface Referee {
 
 // 推荐方式枚举
 export enum ReferWay {
-  REFERRER_REPORT = 1, // 推荐人上报
-  INVITATION_POSTER = 2, // 邀请海报
-  INVITATION_LINK = 3, // 邀请链接
+  /** 推荐人上报 */
+  REFERRER_REPORT = 1,
+  /** 邀请海报 */
+  INVITATION_POSTER = 2,
+  /** 邀请链接 */
+  INVITATION_LINK = 3,
 }
 
 

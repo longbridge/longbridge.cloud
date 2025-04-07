@@ -9,10 +9,12 @@ import { toast } from 'react-toastify'
 import { isServer } from '@/utils/common'
 import { useTranslation } from 'next-i18next'
 import styles from './index.module.scss'
+import { withQuery } from 'ufo'
+import { ReferWay } from '@/services/whale-ambassador/types'
 interface SharePosterProps {
   className?: string
-  name: string
-  code: string
+  name?: string
+  code?: string
   onClose?: () => void
   onSave?: () => void
 }
@@ -108,7 +110,9 @@ export const SharePoster = ({ className, name, code }: SharePosterProps) => {
                 width: 12,
                 excavate: true,
               }}
-              value={getInviteLink(code)}
+              value={withQuery(getInviteLink(code!), {
+                refer_way: ReferWay.INVITATION_POSTER,
+              })}
             ></QRCodeSVG>
           </div>
         </div>
@@ -120,8 +124,8 @@ export const SharePoster = ({ className, name, code }: SharePosterProps) => {
 interface SharePosterModalProps extends ModalProps {
   className?: string
   onClose?: () => void
-  name: string
-  code: string
+  name?: string
+  code?: string
 }
 
 export const savePoster = async (t: (key: string) => string) => {

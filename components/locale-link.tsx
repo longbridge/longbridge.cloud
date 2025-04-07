@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'next-i18next'
-
+import { withKeepQueryPath } from '@/utils/local-path'
 // @ts-ignore
 export const LocaleLink: typeof Link = ({ to, children, rawValue, ...other }) => {
   const { i18n } = useTranslation('common')
@@ -13,8 +13,11 @@ export const LocaleLink: typeof Link = ({ to, children, rawValue, ...other }) =>
       </a>
     )
   }
+
+  const normalTo = withKeepQueryPath(`${localePrefix}${to}`)
+
   return (
-    <Link to={`${localePrefix}${to}`} {...other}>
+    <Link to={normalTo} {...other}>
       {children}
     </Link>
   )
