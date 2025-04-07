@@ -10,7 +10,7 @@ export interface ModalProps extends AntdModalProps {
 }
 
 export const Modal = (props: ModalProps) => {
-  const { className, onClose, children, title, footer, enableHeader = true, ...restProps } = props
+  const { className, onClose, children, title, enableHeader = true, ...restProps } = props
   return (
     <AntdModal
       className={classNames(styles.modal)}
@@ -23,7 +23,7 @@ export const Modal = (props: ModalProps) => {
             {enableHeader && (
               <div
                 className={classNames(
-                  'flex w-full  md:min-h-7 justify-center items-center relative md:border-none  border-border_color_1 px-6  mt-safe-top md:pt-6',
+                  'flex w-full flex-[0_0_45px] md:min-h-7 justify-center items-center relative md:border-none  border-border_color_1 px-6  mt-safe-top md:pt-6',
                   {
                     'border-b': title,
                   }
