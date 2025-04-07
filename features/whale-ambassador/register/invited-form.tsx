@@ -13,8 +13,9 @@ import { Dayjs } from 'dayjs'
 import { useServiceOptions } from './constants'
 import { Modal } from '../modal'
 import { Block } from '../block'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { withQuery } from 'ufo'
+import { isMobile } from 'react-device-detect'
 
 interface InvitedFormProps {
   onSuccess?: (values: Referee) => void
@@ -44,6 +45,8 @@ export const InvitedForm = ({
   const { t, i18n } = useTranslation('common')
   const serviceOptions = useServiceOptions()
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const referWay = searchParams.get('refer_way')
 
   const allowSubmit = useMemo(() => {
     return agreePrivacy
@@ -53,6 +56,7 @@ export const InvitedForm = ({
     setLoading(true)
     try {
       const values = await form.validateFields()
+
       const appointmentDateTime = values.appointmentDate
         ?.clone()
         .hour(values.appointmentTime?.hour() || 0)
@@ -64,7 +68,7 @@ export const InvitedForm = ({
         datetime: appointmentDateTime?.unix() || 0,
         refer_code: referCode!,
         agree_share: shareEmail,
-        refer_way: ReferWay.INVITATION_LINK,
+        refer_way: referWay ? Number(referWay) : ReferWay.INVITATION_LINK,
         services: values.services.map(Number),
       }
 
@@ -151,6 +155,7 @@ export const InvitedForm = ({
         </Form.Item>
         <Form.Item name="appointmentDate" label={t('whale-ambassador.invited-form.appointment-date')}>
           <DatePicker
+            inputReadOnly={isMobile}
             className="w-full"
             format="l"
             placeholder={t('whale-ambassador.invited-form.select-placeholder')}
@@ -158,6 +163,7 @@ export const InvitedForm = ({
         </Form.Item>
         <Form.Item name="appointmentTime" label={t('whale-ambassador.invited-form.appointment-time')}>
           <TimePicker
+            inputReadOnly={isMobile}
             className="w-full"
             placeholder={t('whale-ambassador.invited-form.select-placeholder')}
             format="HH:mm"

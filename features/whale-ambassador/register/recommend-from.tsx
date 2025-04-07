@@ -11,6 +11,7 @@ import styles from './form.module.scss'
 import { i18n, useTranslation, Trans } from 'next-i18next'
 import { PrivacyAgreement } from './privacy-agreement'
 import { useServiceOptions } from './constants'
+import { useSearchParams } from 'react-router-dom'
 
 interface RecommendFormProps {
   onSuccess?: (values: Referee) => void
@@ -25,8 +26,6 @@ export const RecommendForm = ({ onSuccess, referCode }: RecommendFormProps) => {
   const otherService = service?.includes(Service.OTHER)
   const { t } = useTranslation('common')
   const serviceOptions = useServiceOptions()
-
-  console.log('service', service, otherService)
 
   const handleFinish = async () => {
     setLoading(true)
