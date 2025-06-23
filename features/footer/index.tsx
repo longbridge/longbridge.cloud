@@ -224,7 +224,7 @@ const Footer: FC = () => {
           {isCN && (
             <div className="text-xs text-text_color_3_supplement">
               <a href="https://beian.miit.gov.cn" target={'_blank'} rel="noreferrer">
-                浙 ICP 备 19021593 号 -11
+                浙 ICP 备 2025433117 号
               </a>
             </div>
           )}
