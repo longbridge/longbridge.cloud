@@ -139,7 +139,7 @@ const Footer: FC = () => {
                 ))}
               </div>
             </div>
-            <div className="">
+            {/* <div className="">
               <div className="text-sm font-medium text-text_color_1_supplement">
                 {i18n.t('features_footer_index_891121')}
               </div>
@@ -164,8 +164,8 @@ const Footer: FC = () => {
                   </a>
                 ))}
               </div>
-            </div>
-            <div className="">
+            </div> */}
+            {/* <div className="">
               <div className="mb-3 text-sm font-medium text-text_color_1_supplement">
                 {i18n.t('features_footer_index_891125')}
               </div>
@@ -177,7 +177,7 @@ const Footer: FC = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div className="">
               <div className="mb-3 text-sm font-medium text-text_color_1_supplement">
                 {i18n.t('features_footer_index_891126')}
@@ -206,8 +206,8 @@ const Footer: FC = () => {
               </div>
               <div>
                 <img
-                  src="https://assets.lbctrl.com/uploads/ca78ddab-b8a5-4ae8-881b-e08b4a8df37f/whale-official.png"
-                  alt=""
+                  src="https://assets.lbkrs.com/uploads/5e818b6b-e777-40e7-9ac7-0e61f748a902/55621b37fe46a4b31d6064288ce0324f.png"
+                  alt="wechat_qr"
                   className="w-24"
                 />
               </div>
