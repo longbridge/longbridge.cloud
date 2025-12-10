@@ -35,18 +35,19 @@ const AppPlusPage = () => {
     title: i18n.t('features_header_index_4'),
     desc: [i18n.t('pages_locale_solutions_app_plus_8678'), i18n.t('pages_locale_solutions_app_plus_8678-1')],
     img: {
-      'en': 'https://assets.lbctrl.com/uploads/925d4d7b-79cb-444b-822b-a6d22c6e3125/app-en.png',
-      'zh-CN': 'https://assets.lbctrl.com/uploads/d878a06c-689e-48fd-bffb-f26aacff40ba/app-cn.png',
-      'zh-HK': 'https://assets.lbctrl.com/uploads/2d3668e4-34ad-442c-90c5-b895249c7f6e/app-hk.png',
+      'en': 'https://assets.lbkrs.com/uploads/925d4d7b-79cb-444b-822b-a6d22c6e3125/app-en.png',
+      'zh-CN':
+        'https://assets.lbkrs.com/uploads/710b3db7-cad0-46d4-b296-c74b1000cbd1/0fa581c14115d1da2a4c7633fb35a87a.png',
+      'zh-HK': 'https://assets.lbkrs.com/uploads/2d3668e4-34ad-442c-90c5-b895249c7f6e/app-hk.png',
     },
   }
   const content_banner_props = {
     title: i18n.t('pages_locale_solutions_app_plus_8679'),
     desc: [i18n.t('pages_locale_solutions_app_plus_8680')],
     img: {
-      'en': 'https://assets.lbctrl.com/uploads/b5b87228-6917-455e-b44e-af25af5fed8f/1.png',
-      'zh-CN': 'https://assets.lbctrl.com/uploads/b5b87228-6917-455e-b44e-af25af5fed8f/1.png',
-      'zh-HK': 'https://assets.lbctrl.com/uploads/b5b87228-6917-455e-b44e-af25af5fed8f/1.png',
+      'en': 'https://assets.lbkrs.com/uploads/b5b87228-6917-455e-b44e-af25af5fed8f/1.png',
+      'zh-CN': 'https://assets.lbkrs.com/uploads/b5b87228-6917-455e-b44e-af25af5fed8f/1.png',
+      'zh-HK': 'https://assets.lbkrs.com/uploads/b5b87228-6917-455e-b44e-af25af5fed8f/1.png',
     },
     localLink: '/longport',
   }

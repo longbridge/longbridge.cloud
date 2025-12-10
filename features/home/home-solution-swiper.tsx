@@ -26,9 +26,11 @@ const HomeSolutionSwiper = ({ className, showLabel = true, title, needContact = 
           imgClassName: '!sm:w-[530px]',
           desc: [i18n.t('features_home_home_solution_swiper_891113')],
           img: {
-            'en': 'https://assets.lbctrl.com/uploads/433cd5a0-1c29-485b-b0f5-83eeffa7826e/index-app-en.png',
-            'zh-CN': 'https://assets.lbctrl.com/uploads/f39c82d2-7399-4cd8-8068-b32fe3995f16/index-app-cn.png',
-            'zh-HK': 'https://assets.lbctrl.com/uploads/60a2d7b5-21df-4a30-9d4a-96649ee7afdb/index-app-hk.png',
+            'en': 'https://assets.lbctrl.com/uploads/b0ae5b58-4f0b-4de7-8c18-bc557d5d1f1a/f9fb6a063d1856da86a06def2dc6b921.png',
+            'zh-CN':
+              'https://assets.lbctrl.com/uploads/a9d1678e-d50c-4d6c-b160-f8721d5d8030/5ccb34cf436eb6764533a70b91796dff.png',
+            'zh-HK':
+              'https://assets.lbctrl.com/uploads/f4b3dbc0-e3e0-4189-b3f4-007d7249013c/d06f099d0ed3ca049d42fdc50da856d8.png',
           },
           localLink: '/solutions/app-plus',
         },

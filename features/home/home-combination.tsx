@@ -12,9 +12,11 @@ const HomeCombination = () => {
       tips: i18n.t('features_home_home_combination_891115'),
       titleClassName: 'mb-3',
       img: {
-        'en': 'https://pub.pbkrs.com/files/202307/z1Q7Gv88YABfTFwu/LEGO-EN.png',
-        'zh-CN': 'https://pub.pbkrs.com/files/202307/CeotqCXRhXJFKtX5/LEGO-CN.png',
-        'zh-HK': 'https://pub.pbkrs.com/files/202307/9VzeQvb8CXEvGk49/LEGO-HK.png',
+        'en': 'https://assets.lbctrl.com/uploads/137f5c00-6f4a-43dc-83b3-c8d1f8672f9b/ab0d4a5414453df9b2e7453d84daf50e.png',
+        'zh-CN':
+          'https://assets.lbctrl.com/uploads/674bfab7-2aa7-42ab-a2a0-d6b2644678b9/52a58c70fb3c4fca1daec075fbc00e8d.png',
+        'zh-HK':
+          'https://assets.lbctrl.com/uploads/69d87f3c-8ea4-4df0-b5a7-ce5f9a3319a9/3d841a0480b7647128ec5889cba1f5a4.png',
       },
     }
   }, [])

@@ -33,29 +33,31 @@ const Retail: React.FC = () => {
     title: i18n.t('features_header_index_3'),
     desc: [i18n.t('pages_locale_solutions_retail_5')],
     img: {
-      'en': 'https://assets.lbctrl.com/uploads/27d72c4e-f5b7-4f7d-8ec6-7a3394b3dfe1/sell-en.png',
-      'zh-CN': 'https://assets.lbctrl.com/uploads/b88c90a4-c192-4012-a523-c59c2bb51dee/sell-cn.png',
-      'zh-HK': 'https://assets.lbctrl.com/uploads/93f0319f-cb73-48fb-b9a7-e7251575e5aa/sell-hk.png',
+      'en': 'https://assets.lbkrs.com/uploads/e9cf7765-4d78-4202-be70-4c5f8053fd0c/2f41eb5b3334500800e9730210763773.png',
+      'zh-CN':
+        'https://assets.lbkrs.com/uploads/8b8208ef-033e-4898-bd48-c04b0260680f/347c9c7d35679e99658f8820e9a07a00.png',
+      'zh-HK':
+        'https://assets.lbkrs.com/uploads/9af836e4-4739-4e3d-b848-58541af7bf26/3561ca3a33ef3658c0dc9eb5f70d46fb.png',
     },
   }
 
   const compareList = [
-    {
-      title: 'LongPort',
-      description: i18n.t('pages_locale_solutions_retail_6'),
-      subTitle: i18n.t('pages_locale_solutions_retail_7'),
-      subList: [
-        i18n.t('pages_locale_solutions_retail_8'),
-        i18n.t('pages_locale_solutions_retail_9'),
-        i18n.t('pages_locale_solutions_retail_10'),
-        i18n.t('pages_locale_solutions_retail_11'),
-        i18n.t('pages_locale_solutions_retail_12'),
-      ],
-      thirdTitle: i18n.t('pages_locale_solutions_retail_13'),
-      // autocorrect:false
-      thirdDescription: i18n.i18n.language === 'en' ? 'Mobile, Pad, Web' : 'Mobile、Pad、Web',
-      // autocorrect:true
-    },
+    // {
+    //   title: 'LongPort',
+    //   description: i18n.t('pages_locale_solutions_retail_6'),
+    //   subTitle: i18n.t('pages_locale_solutions_retail_7'),
+    //   subList: [
+    //     i18n.t('pages_locale_solutions_retail_8'),
+    //     i18n.t('pages_locale_solutions_retail_9'),
+    //     i18n.t('pages_locale_solutions_retail_10'),
+    //     i18n.t('pages_locale_solutions_retail_11'),
+    //     i18n.t('pages_locale_solutions_retail_12'),
+    //   ],
+    //   thirdTitle: i18n.t('pages_locale_solutions_retail_13'),
+    //   // autocorrect:false
+    //   thirdDescription: i18n.i18n.language === 'en' ? 'Mobile, Pad, Web' : 'Mobile、Pad、Web',
+    //   // autocorrect:true
+    // },
     {
       title: 'White Label',
       description: i18n.t('pages_locale_solutions_retail_14'),
