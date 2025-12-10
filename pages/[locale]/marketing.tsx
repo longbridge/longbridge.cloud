@@ -81,7 +81,7 @@ const Marketing: React.FC = () => {
         ],
       },
       {
-        img: 'https://assets.lbctrl.com/uploads/48425892-cf48-44ae-87ce-c62e8ffce5e2/Group 427319374.png',
+        img: 'https://assets.lbkrs.com/uploads/e4d22741-ffeb-4111-892a-e78cbeae2cee/7df6ab20faf88c280d688b1d93d0ce3b.png',
         title: [i18n.t('whale-marketing-057'), i18n.t('whale-marketing-063')],
         tips: i18n.t('whale-marketing-058'),
         data: [
@@ -318,7 +318,7 @@ const Marketing: React.FC = () => {
                   </div>
                   <div className="flex-1">
                     <img
-                      src="https://assets.lbctrl.com/uploads/23b898a0-2e33-4fdf-8592-d5416659c69c/Group 427318897.png"
+                      src="https://assets.lbkrs.com/uploads/abe4e36f-9a52-4378-addc-f0a3a6404800/7d4193aae841563c719a60e1a705d4ef.png"
                       alt=""
                       className="lg:w-[558px]"
                     />
