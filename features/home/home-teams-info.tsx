@@ -39,7 +39,7 @@ const HomeTeamsInfo = ({ className, itemStyle }: HomeTeamsInfoProps) => {
         desc: [i18n.t('features_home_home_teams_info_891150')],
       },
       {
-        img: 'https://assets.lbctrl.com/uploads/31305a5a-bb2e-4ceb-988e-4f2d0b386b10/60.png',
+        img: 'https://assets.lbkrs.com/uploads/10cda85c-64dc-4262-8b3c-efd642f00f60/over100.png',
         title: i18n.t('features_home_home_teams_info_891152'),
         desc: [i18n.t('features_home_home_teams_info_891153')],
       },
