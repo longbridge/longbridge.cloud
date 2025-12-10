@@ -11,7 +11,7 @@ const HomeCardList = () => {
       { title: '30%', desc: [i18n.t('features_home_data_card_list_891113')] },
       { title: '50%', desc: [i18n.t('features_home_data_card_list_891114')] },
       {
-        title: '6 ms',
+        title: '10 ms',
         desc:
           i18n.i18n.language === 'en'
             ? [i18n.t('features_home_data_card_list_891115')]

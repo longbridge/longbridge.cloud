@@ -72,16 +72,16 @@ const AppPlusPage = () => {
   }
 
   const compareList = [
-    {
-      title: 'LongPort',
-      description: i18n.t('pages_locale_solutions_app_plus_8685'),
-      subTitle: i18n.t('pages_locale_solutions_app_plus_8686'),
-      subList: [
-        i18n.t('pages_locale_solutions_app_plus_8687'),
-        i18n.t('pages_locale_solutions_app_plus_8688'),
-        i18n.t('pages_locale_solutions_retail_12'),
-      ],
-    },
+    // {
+    //   title: 'LongPort',
+    //   description: i18n.t('pages_locale_solutions_app_plus_8685'),
+    //   subTitle: i18n.t('pages_locale_solutions_app_plus_8686'),
+    //   subList: [
+    //     i18n.t('pages_locale_solutions_app_plus_8687'),
+    //     i18n.t('pages_locale_solutions_app_plus_8688'),
+    //     i18n.t('pages_locale_solutions_retail_12'),
+    //   ],
+    // },
     {
       title: 'White Label',
       description: i18n.t('pages_locale_solutions_app_plus_8689'),
@@ -96,7 +96,7 @@ const AppPlusPage = () => {
 
   const table_1 = {
     heads: [
-      { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
+      // { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
       {
         title: i18n.t('pages_locale_solutions_app_plus_8694'),
         subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
@@ -116,14 +116,13 @@ const AppPlusPage = () => {
     body: [
       {
         label: i18n.t('features_header_index_retail_terminal'),
-        value: [[i18n.t('pages_locale_solutions_app_plus_8699'), false, true, true, true]],
+        value: [[i18n.t('pages_locale_solutions_app_plus_8699'), true, true, true]],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_8700'),
         value: [
           [
             i18n.t('pages_locale_solutions_app_plus_8701'),
-            true,
             <span key="line-1" className="text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8701_1')}
             </span>,
@@ -140,18 +139,9 @@ const AppPlusPage = () => {
       {
         label: i18n.t('pages_locale_solutions_app_plus_8702'),
         value: [
-          [
-            i18n.t('one-stop.custom-manager.title'),
-            <span key="line-1" className="text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_app_plus_8701_3')}
-            </span>,
-            true,
-            true,
-            true,
-          ],
+          [i18n.t('one-stop.custom-manager.title'), true, true, true],
           [
             i18n.t('pages_locale_solutions_app_plus_8681'),
-            false,
             <span key="line-1" className="text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8701_3')}
             </span>,
@@ -167,7 +157,7 @@ const AppPlusPage = () => {
   }
   const table_2 = {
     heads: [
-      { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
+      // { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
       {
         title: i18n.t('pages_locale_solutions_app_plus_8694'),
         subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
@@ -188,31 +178,31 @@ const AppPlusPage = () => {
       {
         label: i18n.t('features_header_index_retail_terminal'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8703'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8704'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8705'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8703'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8704'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8705'), true, true, true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_8700'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8706'), true, true, false, false],
-          [i18n.t('pages_locale_solutions_app_plus_8707'), true, false, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8708'), true, false, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8709'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8706'), true, false, false],
+          [i18n.t('pages_locale_solutions_app_plus_8707'), false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8708'), false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8709'), true, true, true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_891149'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8710'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8710_1'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8711'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8712'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8712_1'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8710'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8710_1'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8711'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8712'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8712_1'), true, true, true],
           [
             i18n.t('pages_locale_solutions_app_plus_8713'),
-            true,
+            ,
             <span key="line-1" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8763_1')}
             </span>,
@@ -222,9 +212,6 @@ const AppPlusPage = () => {
           ],
           [
             i18n.t('pages_locale_solutions_app_plus_8714'),
-            <span key="line-1" className="text-sm text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_app_plus_8763_2')}
-            </span>,
             <span key="line-2" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8763_2')}
             </span>,
@@ -243,7 +230,6 @@ const AppPlusPage = () => {
             true,
             true,
             true,
-            true,
           ],
         ],
       },
@@ -252,7 +238,7 @@ const AppPlusPage = () => {
   }
   const table_3 = {
     heads: [
-      { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
+      // { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
       {
         title: i18n.t('pages_locale_solutions_app_plus_8694'),
         subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
@@ -273,12 +259,11 @@ const AppPlusPage = () => {
       {
         label: i18n.t('pages_locale_solutions_app_plus_8715'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8716'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8717'), true, true, true, true],
-          [i18n.t('trading_functions_020'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8716'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8717'), true, true, true],
+          [i18n.t('trading_functions_020'), true, true, true],
           [
             i18n.t('pages_locale_solutions_app_plus_8718'),
-            true,
             <span key="line-1" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8763_2')}
             </span>,
@@ -291,7 +276,6 @@ const AppPlusPage = () => {
           ],
           [
             i18n.t('pages_locale_solutions_app_plus_8719'),
-            true,
             <span key="line-1" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8763_2')}
             </span>,
@@ -307,9 +291,9 @@ const AppPlusPage = () => {
       {
         label: i18n.t('pages_locale_solutions_app_plus_8720'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8721'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8722'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8723'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8721'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8722'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8723'), true, true, true],
         ],
       },
     ],
@@ -317,7 +301,7 @@ const AppPlusPage = () => {
   }
   const table_4 = {
     heads: [
-      { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
+      // { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
       {
         title: i18n.t('pages_locale_solutions_app_plus_8694'),
         subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
@@ -338,13 +322,12 @@ const AppPlusPage = () => {
       {
         label: i18n.t('one-stop.custom-manager.title'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8724'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8724'), true, true, true],
           [
             <div key="client">
               <div>{i18n.t('pages_locale_solutions_app_plus_8763_5')}</div>
               <div className="mt-1 text-xs text-text_color_2">{i18n.t('pages_locale_solutions_app_plus_8763_6')}</div>
             </div>,
-            false,
             <span key="line-1" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8763_2')}
             </span>,
@@ -355,7 +338,7 @@ const AppPlusPage = () => {
               {i18n.t('pages_locale_solutions_app_plus_8763_2')}
             </span>,
           ],
-          [i18n.t('pages_locale_solutions_app_plus_8725'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8725'), true, true, true],
         ],
       },
     ],
@@ -363,7 +346,7 @@ const AppPlusPage = () => {
   }
   const table_5 = {
     heads: [
-      { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
+      // { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
       {
         title: i18n.t('pages_locale_solutions_app_plus_8694'),
         subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
@@ -384,39 +367,38 @@ const AppPlusPage = () => {
       {
         label: i18n.t('pages_locale_solutions_app_plus_8726_1'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8726'), false, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8727'), false, false, false, true],
-          [i18n.t('pages_locale_solutions_app_plus_8728'), false, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8729'), false, false, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8730'), false, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8731'), false, false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8726'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8727'), false, false, true],
+          [i18n.t('pages_locale_solutions_app_plus_8728'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8729'), false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8730'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8731'), false, true, true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_8732'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8733_1'), true, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8733'), false, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8734'), false, true, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8735'), false, false, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8736'), false, false, false, true],
+          [i18n.t('pages_locale_solutions_app_plus_8733_1'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8733'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8734'), true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8735'), false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8736'), false, false, true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_8763_9_1'),
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8737'), false, false, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8738'), false, false, false, true],
+          [i18n.t('pages_locale_solutions_app_plus_8737'), false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8738'), false, false, true],
         ],
       },
       {
         label: 'PageHub',
         value: [
-          [i18n.t('pages_locale_solutions_app_plus_8739'), false, false, true, true],
-          [i18n.t('pages_locale_solutions_app_plus_8740'), false, false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8739'), false, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8740'), false, true, true],
           [
             i18n.t('pages_locale_solutions_app_plus_8741'),
-            false,
             <span key="line-2" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8763_2')}
             </span>,

@@ -50,14 +50,14 @@ function useNavs() {
             value: '/backoffice',
             label: i18n.t('whale-backoffice-001'),
           },
-          {
-            value: '/longport',
-            label: i18n.t('whale-community-001'),
-          },
-          {
-            value: '/portai',
-            label: 'PortAI',
-          },
+          // {
+          //   value: '/longport',
+          //   label: i18n.t('whale-community-001'),
+          // },
+          // {
+          //   value: '/portai',
+          //   label: 'PortAI',
+          // },
           {
             value: '/delivery-system',
             label: i18n.t('whale-delivery-system-001'),
@@ -118,19 +118,19 @@ function useNavs() {
         label: i18n.t('header_nav_009'),
         children: [],
       },
-      {
-        value: '/whale-ambassador',
-        suffix: '',
-        label: (
-          <span className="inline-flex items-center">
-            <span>{i18n.t('header_nav_010')}</span>
-            <span className="text-[12px] leading-[18px] ml-2  text-[#CA8123] border border-[#FCF2D3] bg-[#FEFAEE] px-1">
-              New
-            </span>
-          </span>
-        ),
-        children: [],
-      },
+      // {
+      //   value: '/whale-ambassador',
+      //   suffix: '',
+      //   label: (
+      //     <span className="inline-flex items-center">
+      //       <span>{i18n.t('header_nav_010')}</span>
+      //       <span className="text-[12px] leading-[18px] ml-2  text-[#CA8123] border border-[#FCF2D3] bg-[#FEFAEE] px-1">
+      //         New
+      //       </span>
+      //     </span>
+      //   ),
+      //   children: [],
+      // },
     ]
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reports])

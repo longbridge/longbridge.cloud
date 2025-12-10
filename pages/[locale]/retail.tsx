@@ -267,7 +267,7 @@ const Retail: React.FC = () => {
                 {
                   avatar: 'https://assets.lbctrl.com/uploads/76d421f5-6408-403f-b2f1-c1b24dcb767f/avatar1.png',
                   name: 'luzhen 1982',
-                  platform: i18n.t('pages_locale_solutions_retail_48'),
+                  platform: i18n.t('pages_locale_product_retail_57'),
                   description: i18n.t('pages_locale_solutions_retail_49'),
                 },
                 {
@@ -285,7 +285,7 @@ const Retail: React.FC = () => {
                 {
                   avatar: 'https://assets.lbctrl.com/uploads/b0e24d73-cd50-40ec-94d8-6e7775520924/avatar4.png',
                   name: 'GzxGisele',
-                  platform: i18n.t('pages_locale_product_retail_60'),
+                  platform: i18n.t('pages_locale_product_retail_57'),
                   description: i18n.t('pages_locale_product_retail_61'),
                 },
                 {
