@@ -297,7 +297,7 @@ export const IndexBanner = () => {
         </Block>
       </TopBlock> */}
       <GrowTogetherTopBanner />
-      <WhaleAmbassadorTopBanner />
+      {/* <WhaleAmbassadorTopBanner /> */}
     </Carousel>
   )
 }
