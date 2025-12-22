@@ -1,8 +1,12 @@
 import { NextSeo, NextSeoProps } from 'next-seo'
 import React, { FC } from 'react'
+import { useLocation } from 'react-router-dom'
+
+const domain = 'https://longportwhale.com'
 
 export const SEOMeta: FC<NextSeoProps & { url?: string; indexTitle?: boolean }> = props => {
-  const { title: rawTitle, description, url = 'https://longbridge.cloud', indexTitle } = props
+  const localtion = useLocation()
+  const { title: rawTitle, description, url = 'https://longportwhale.com', indexTitle } = props
   const title = indexTitle ? rawTitle : `${rawTitle} - Longbridge Whale`
   const openGraph = {
     title,
@@ -20,5 +24,30 @@ export const SEOMeta: FC<NextSeoProps & { url?: string; indexTitle?: boolean }> 
     site: url,
     cardType: 'summary_large_image',
   }
-  return <NextSeo title={title} description={description} openGraph={openGraph} twitter={twitter} />
+
+  const withoutLocalePathname = localtion.pathname.replace(/^\/(en|zh-HK|zh-CN)/, '/').replace(/\/\//g, '/')
+
+  return (
+    <NextSeo
+      title={title}
+      description={description}
+      canonical={`${domain}${localtion.pathname}`}
+      languageAlternates={[
+        {
+          hrefLang: 'zh-Hant',
+          href: `${domain}${withoutLocalePathname}`,
+        },
+        {
+          hrefLang: 'en',
+          href: `${domain}/en${withoutLocalePathname}`,
+        },
+        {
+          hrefLang: 'zh-Hans',
+          href: `${domain}/zh-CN${withoutLocalePathname}`,
+        },
+      ]}
+      openGraph={openGraph}
+      twitter={twitter}
+    />
+  )
 }
