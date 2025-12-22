@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev --port=3000",
     "dev:prod": "NODE_OPTIONS=--openssl-legacy-provider PROXY=prod next dev --port=3000",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build && next export && yarn normalize-asset-path",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build && next export && yarn normalize-asset-path && yarn create-sitemap",
     "normalize-asset-path": "node ./normalize-asset-path",
+    "create-sitemap": "node ./create-sitemap.js",
     "start": "next start",
     "lint": "next lint"
   },
