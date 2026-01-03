@@ -1919,5 +1919,10 @@
   "whale-ambassador.home-banner.double-rewards": "≥ 3 个 <highlight>奖励翻倍</highlight>",
   "whale-ambassador.home-banner.learn-more": "了解更多",
   "whale-ambassador.home-banner.sign-up": "成为推荐官",
-  "whale-ambassador.home-banner.terms": "*受条款及细则约束。"
+  "whale-ambassador.home-banner.terms": "*受条款及细则约束。",
+  "portai.topbanner.title": "你的 AI 懂思考，更能執行",
+  "portai.topbanner.subtitle": "准备好亲身体验 PortAI 了吗？",
+  "portai.topbanner.description": "你来对地方了。结合先进技术的 PortAI，可为你实时解答投资问题。",
+  "portai.topbanner.description2": "无论是股票、行情趋势还是市场数据，只要提问，就能立刻获得可付诸行动的洞察。",
+  "portai.topbanner.button": "开始试用 PortAI"
 }
