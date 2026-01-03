@@ -59,10 +59,10 @@ const SwiperImage = ({ bgImage, pcImage, mImage, popImage, inpPcImage, inpMImage
           <div
             className="absolute overflow-hidden"
             style={{
-              top: '48%',
+              top: '31%',
               right: '1.5%',
               width: '16%',
-              height: '40%',
+              height: '45%',
             }}
             key={mImage}
           >
@@ -198,8 +198,8 @@ const data: { [key: string]: Banner[] } = {
     },
     {
       bgImage: 'https://assets.lbkrs.com/uploads/506293aa-8d21-4856-a3c7-83814b62e545/en.png',
-      pcImage: 'https://assets.lbkrs.com/uploads/387c45c1-cb43-4999-b593-f523a15440f8/buzhuo-en-1.png',
-      mImage: 'https://assets.lbkrs.com/uploads/3623f1ff-1d77-4b44-8b16-8ea04a785230/buzhuo-en-2.png',
+      pcImage: 'https://assets.lbkrs.com/uploads/3623f1ff-1d77-4b44-8b16-8ea04a785230/buzhuo-en-2.png',
+      mImage: 'https://assets.lbkrs.com/uploads/387c45c1-cb43-4999-b593-f523a15440f8/buzhuo-en-1.png',
       popImage: 'https://assets.lbkrs.com/uploads/c9fd06db-56c5-412c-bdc5-e1e0c4742680/buzhuo-en-3.png',
       inpPcImage: 'https://assets.lbctrl.com/uploads/4ce8252b-1926-4742-a849-9e6bfbe7abe9/i-en-1.png',
       inpMImage: 'https://assets.lbctrl.com/uploads/a0ee45b5-145c-41f6-8ec4-1fe3d145050e/i-en-2.png',
@@ -207,16 +207,16 @@ const data: { [key: string]: Banner[] } = {
 
     {
       bgImage: 'https://assets.lbkrs.com/uploads/506293aa-8d21-4856-a3c7-83814b62e545/en.png',
-      pcImage: 'https://assets.lbkrs.com/uploads/838fcfcf-1678-430a-b692-5610729c5100/mohu-en-1.png',
-      mImage: 'https://assets.lbkrs.com/uploads/2d02b61e-c974-4f4b-98bf-ca37c51017df/mohu-en-2.png',
+      pcImage: 'https://assets.lbkrs.com/uploads/2d02b61e-c974-4f4b-98bf-ca37c51017df/mohu-en-2.png',
+      mImage: 'https://assets.lbkrs.com/uploads/838fcfcf-1678-430a-b692-5610729c5100/mohu-en-1.png',
       popImage: 'https://assets.lbkrs.com/uploads/2b63009e-75c4-42ef-89b9-45c8b9780389/mohu-en-3.png',
       inpPcImage: 'https://assets.lbctrl.com/uploads/4ce8252b-1926-4742-a849-9e6bfbe7abe9/i-en-1.png',
       inpMImage: 'https://assets.lbctrl.com/uploads/a0ee45b5-145c-41f6-8ec4-1fe3d145050e/i-en-2.png',
     },
     {
       bgImage: 'https://assets.lbkrs.com/uploads/506293aa-8d21-4856-a3c7-83814b62e545/en.png',
-      pcImage: 'https://assets.lbkrs.com/uploads/58039486-5d92-404c-a207-3095a5fa4b59/zhineng-en-1.png',
-      mImage: 'https://assets.lbkrs.com/uploads/5b2c86b0-9779-4519-96c8-c8b3db5093c0/zhineng-en-2.png',
+      pcImage: 'https://assets.lbkrs.com/uploads/5b2c86b0-9779-4519-96c8-c8b3db5093c0/zhineng-en-2.png',
+      mImage: 'https://assets.lbkrs.com/uploads/58039486-5d92-404c-a207-3095a5fa4b59/zhineng-en-1.png',
       popImage: 'https://assets.lbkrs.com/uploads/c7afc22d-bb7d-4e59-bb6e-22b74d064507/zhineng-en-3.png',
       inpPcImage: 'https://assets.lbctrl.com/uploads/4ce8252b-1926-4742-a849-9e6bfbe7abe9/i-en-1.png',
       inpMImage: 'https://assets.lbctrl.com/uploads/a0ee45b5-145c-41f6-8ec4-1fe3d145050e/i-en-2.png',
@@ -253,13 +253,13 @@ export const PortaiTopBanner: React.FC<Props> = props => {
     setCurrent(index)
     indexRef.current = index
     console.log(index)
-    // timer = setInterval(() => {
-    //   if (indexRef.current + 1 >= data[i18n.language].length) {
-    //     goto(0)
-    //     return
-    //   }
-    //   goto(indexRef.current + 1)
-    // }, 5000)
+    timer = setInterval(() => {
+      if (indexRef.current + 1 >= data[i18n.language].length) {
+        goto(0)
+        return
+      }
+      goto(indexRef.current + 1)
+    }, 3000)
   }
 
   useEffect(() => {
@@ -272,7 +272,7 @@ export const PortaiTopBanner: React.FC<Props> = props => {
   }, [])
 
   return (
-    <div className={classNames('py-5 bg-cover main-container lg:pt-20 lg:pb-[90px]', styles.portaiTopBanner)}>
+    <div className={classNames('py-5 bg-cover main-container lg:pb-[90px]', styles.portaiTopBanner)}>
       <div className="flex flex-col items-center justify-between main-content-width">
         {/* 文字 */}
         <div className="flex flex-col text-center">
@@ -282,7 +282,7 @@ export const PortaiTopBanner: React.FC<Props> = props => {
               fontSize: '42px',
             }}
           >
-            {t('portai.topbanner.title')} {current}
+            {t('portai.topbanner.title')}
           </h1>
           <h1 className="font-semibold text-3xl mb-2">{t('portai.topbanner.subtitle')}</h1>
           <p className="text-base">{t('portai.topbanner.description')}</p>
