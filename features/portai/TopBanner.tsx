@@ -26,7 +26,21 @@ interface Banner {
   inpMImage: string
 }
 
-const SwiperImage = ({ bgImage, pcImage, mImage, popImage, inpPcImage, inpMImage }: Banner) => {
+interface SwiperImageProps {
+  current: number
+  goto: (index: number) => void
+}
+
+const SwiperImage = ({
+  bgImage,
+  pcImage,
+  mImage,
+  popImage,
+  inpPcImage,
+  inpMImage,
+  current,
+  goto,
+}: Banner & SwiperImageProps) => {
   return (
     <div
       className="w-full relative"
@@ -51,7 +65,7 @@ const SwiperImage = ({ bgImage, pcImage, mImage, popImage, inpPcImage, inpMImage
             key={pcImage}
           >
             <div className={cn('w-full h-full relative')}>
-              <img className="absolute top-0 left-0 banner-animate" src={pcImage} alt="" />
+              <img className="absolute top-0 left-0 animate__animated animate__fadeIn" src={pcImage} alt="" />
             </div>
           </div>
         )}
@@ -67,7 +81,7 @@ const SwiperImage = ({ bgImage, pcImage, mImage, popImage, inpPcImage, inpMImage
             key={mImage}
           >
             <div className={cn('w-full h-full relative')}>
-              <img className="absolute top-0 left-0 banner-animate" src={mImage} alt="" />
+              <img className="absolute top-0 left-0 animate__animated animate__fadeIn" src={mImage} alt="" />
             </div>
           </div>
         )}
@@ -75,10 +89,10 @@ const SwiperImage = ({ bgImage, pcImage, mImage, popImage, inpPcImage, inpMImage
           <div
             className="absolute opacity-1 animate__animated animate__fadeIn"
             style={{
-              bottom: '28%',
-              left: '11%',
+              bottom: '27%',
+              left: '8%',
               width: '40%',
-              height: '10%',
+              height: '13%',
             }}
             key={popImage}
           >
@@ -113,6 +127,26 @@ const SwiperImage = ({ bgImage, pcImage, mImage, popImage, inpPcImage, inpMImage
             <img className="absolute top-0 left-0 h-full" src={inpMImage} alt="" />
           </div>
         )}
+      </div>
+      <div
+        className="flex justify-center space-x-2 absolute left-0 w-full"
+        style={{
+          bottom: '3%',
+        }}
+      >
+        {[0, 1, 2, 3].map((_, index) => {
+          return (
+            <Button
+              key={index}
+              className={cn('rounded-full w-[10px] h-[10px] md:w-[14px] md:h-[14px]')}
+              style={{
+                padding: 0,
+                background: index === current ? '#37A0FF' : '#D9D9D9',
+              }}
+              onClick={() => goto(index)}
+            ></Button>
+          )
+        })}
       </div>
     </div>
   )
@@ -259,7 +293,7 @@ export const PortaiTopBanner: React.FC<Props> = props => {
         return
       }
       goto(indexRef.current + 1)
-    }, 3000)
+    }, 6000)
   }
 
   useEffect(() => {
@@ -284,35 +318,18 @@ export const PortaiTopBanner: React.FC<Props> = props => {
           >
             {t('portai.topbanner.title')}
           </h1>
-          <h1 className="font-semibold text-3xl mb-2">{t('portai.topbanner.subtitle')}</h1>
-          <p className="text-base">{t('portai.topbanner.description')}</p>
-          <p className="text-base">{t('portai.topbanner.description2')}</p>
+          <h1 className="font-semibold text-3xl">{t('portai.topbanner.subtitle')}</h1>
+          {/* <p className="text-base">{t('portai.topbanner.description')}</p>
+          <p className="text-base">{t('portai.topbanner.description2')}</p> */}
           <div className="flex justify-center space-x-5">
             <a href="https://longbridge.com/ai" target="_blank">
-              <Button size="medium" className="my-4">
+              <Button size="medium" className="mt-4 mb-6">
                 {t('portai.topbanner.button')}
               </Button>
             </a>
           </div>
         </div>
-        {banner && <SwiperImage {...banner} />}
-        <div className="flex justify-center space-x-2">
-          {[0, 1, 2, 3].map((_, index) => {
-            return (
-              <Button
-                key={index}
-                className={cn('rounded-full')}
-                style={{
-                  width: 14,
-                  height: 14,
-                  padding: 0,
-                  background: index === current ? '#37A0FF' : '#D9D9D9',
-                }}
-                onClick={() => goto(index)}
-              ></Button>
-            )
-          })}
-        </div>
+        {banner && <SwiperImage {...banner} current={current} goto={goto} />}
       </div>
     </div>
   )
