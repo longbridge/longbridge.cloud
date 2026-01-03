@@ -1840,5 +1840,10 @@
   "whale-ambassador.home-banner.double-rewards": "≥ 3 Leads <highlight>Double Rewards</highlight>",
   "whale-ambassador.home-banner.learn-more": "Learn more",
   "whale-ambassador.home-banner.sign-up": "Sign up now",
-  "whale-ambassador.home-banner.terms": "*T&C apply."
+  "whale-ambassador.home-banner.terms": "*T&C apply.",
+  "portai.topbanner.title": "PortAI: Your Agent Built to Think and Act",
+  "portai.topbanner.subtitle": "Ready to get hands-on with PortAI?",
+  "portai.topbanner.description": "You’re in the right place. PortAI gives you real-time investment answers powered by advanced AI.",
+  "portai.topbanner.description2": "Ask any question about stocks, trends, or market data, and get instant, actionable insights immediately.",
+  "portai.topbanner.button": "Try PortAI Now"
 }

@@ -8,11 +8,11 @@ import React, { useMemo, useRef } from 'react'
 import { SEOMeta } from '@/utils/seo'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { NewBanner as Banner } from '@/features/product/Banner'
 import Title from '@/features/product/title'
 import Box from '@/features/product/Box'
 import { ImageAndText } from '@/features/solutions/info-introduce'
 import CardSwiper from '@/features/common/card-swiper'
+import { PortaiTopBanner } from '@/features/portai/TopBanner'
 
 const product_advantage_img: Record<string, string> = {
   'en': 'https://pub.pbkrs.com/files/202307/wpQUnihfi1t94wFt/portai-table-en.svg',
@@ -199,7 +199,7 @@ const PortAI: React.FC = () => {
     <Layout>
       <SEOMeta indexTitle={false} title={seoI18n.t('portai.title')} description={seoI18n.t('portai.description')} />
       <div>
-        <Banner {...banner_props}></Banner>
+        <PortaiTopBanner {...banner_props}></PortaiTopBanner>
         <div className="pb-10 main-container">
           <div className="flex flex-col gap-3 main-content-width">
             <ImageAndText {...markeImgTextProps} />
