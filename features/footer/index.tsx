@@ -219,7 +219,7 @@ const Footer: FC = () => {
         <hr className="mt-6 border-[#EAEBEC]"></hr>
         <div className="flex items-center justify-between mt-6">
           <div className="text-xs text-text_color_3_supplement">
-            <div dangerouslySetInnerHTML={{ __html: i18n.t('footer_005') }} />
+            <div dangerouslySetInnerHTML={{ __html: i18n.t('footer_005', [new Date().getFullYear()]) }} />
           </div>
           {isCN && (
             <div className="text-xs text-text_color_3_supplement">
