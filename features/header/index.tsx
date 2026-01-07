@@ -54,10 +54,10 @@ function useNavs() {
           //   value: '/longport',
           //   label: i18n.t('whale-community-001'),
           // },
-          {
-            value: '/portai',
-            label: 'PortAI',
-          },
+          // {
+          //   value: '/portai',
+          //   label: 'PortAI',
+          // },
           {
             value: '/delivery-system',
             label: i18n.t('whale-delivery-system-001'),
