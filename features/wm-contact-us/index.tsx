@@ -14,7 +14,7 @@ const ContactUs = () => {
         children: [
           {
             label: i18n.t('features_footer_index_891118'),
-            value: 'bd@longbridge.cloud',
+            value: 'bd@longportwhale.com',
             type: 'mailto:',
           },
           {

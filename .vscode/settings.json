@@ -9,7 +9,7 @@
     "i18next"
   ],
   "i18n-ally.localesPaths": [
-    "./public/locales"
+    "./public/locales/"
   ],
   "i18n-ally.extract.keygenStrategy": "empty",
   "i18n-ally.keystyle": "flat"

@@ -33,9 +33,9 @@ const BackOffice: React.FC = () => {
     title: i18n.t('whale-backoffice-001'),
     desc: [i18n.t('whale-backoffice-002'), i18n.t('whale-backoffice-003')],
     img: {
-      'en': 'https://assets.lbctrl.com/uploads/f81f49f0-15b2-40a4-b43c-4176751af462/back-en.png',
-      'zh-CN': 'https://assets.lbctrl.com/uploads/6aceb73c-8c0a-4cf7-8eae-c4f82ecbb15e/back-cn.png',
-      'zh-HK': 'https://assets.lbctrl.com/uploads/19e70656-1fa3-4f0a-9c7b-c5e90b11693b/back-hk.png',
+      'en': 'https://assets.lbctrl.com/uploads/4de0c574-d27f-4b29-b1a1-a203bad0e7f8/back-en.webp',
+      'zh-CN': 'https://assets.lbctrl.com/uploads/8ae568cf-39b9-46ee-ba07-87478782f819/back-cn.webp',
+      'zh-HK': 'https://assets.lbctrl.com/uploads/53d20523-54e7-46b0-bbb4-afde8dedc195/back-hk.webp',
     },
   }
 

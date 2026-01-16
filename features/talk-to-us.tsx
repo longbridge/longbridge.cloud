@@ -79,7 +79,7 @@ function useFormItems() {
       messages: '',
     }
     formItems.forEach(({ key, value }) => {
-      ;(val as any)[key] = value
+      ; (val as any)[key] = value
     }, {} as any)
     return val
   }, [formItems])
@@ -185,7 +185,7 @@ const PhoneTalkToUs = ({ onClose }: { onClose: () => void }) => {
           i18n.t('features_talk_to_us_891120'),
         ],
         phone: '+852 3851 1711',
-        email: 'bd@longbridge.cloud',
+        email: 'bd@longportwhale.com',
       },
       {
         icon: 'https://assets.lbctrl.com/uploads/0c34320c-c99c-434f-88a9-b9a7b80b721c/broker.png',

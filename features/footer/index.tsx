@@ -47,7 +47,7 @@ const Footer: FC = () => {
       },
       {
         label: i18n.t('features_footer_index_891118'),
-        value: 'bd@longbridge.cloud',
+        value: 'bd@longportwhale.com',
         type: 'mailto:',
       },
     ]
@@ -200,18 +200,6 @@ const Footer: FC = () => {
                 </a>
               </div>
             </div>
-            <div className="">
-              <div className="mb-3 text-sm font-medium text-text_color_1_supplement">
-                {i18n.t('features_footer_index_891124')}
-              </div>
-              <div>
-                <img
-                  src="https://assets.lbkrs.com/uploads/5e818b6b-e777-40e7-9ac7-0e61f748a902/55621b37fe46a4b31d6064288ce0324f.png"
-                  alt="wechat_qr"
-                  className="w-24"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -228,22 +216,25 @@ const Footer: FC = () => {
               </a>
             </div>
           )}
-          {legalTermsUrl && (
-            <a href={legalTermsUrl} target="_blank" rel="noreferrer">
+          <div className="space-x-2">
+            <a href={i18n.t('footer_009_link')} target="_blank" rel="noreferrer">
+              {i18n.t('footer_009')}
+            </a>
+            <a href={i18n.t('footer_009_link')} target="_blank" rel="noreferrer">
               {i18n.t('footer_008')}
             </a>
-          )}
-          {false && (
-            <div>
-              {links.map(({ label, href }) => {
-                return (
-                  <a className="ml-12 text-xs first:ml-0" href={href} key={label}>
-                    {label}
-                  </a>
-                )
-              })}
-            </div>
-          )}
+            {false && (
+              <div>
+                {links.map(({ label, href }) => {
+                  return (
+                    <a className="ml-12 text-xs first:ml-0" href={href} key={label}>
+                      {label}
+                    </a>
+                  )
+                })}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </footer>
