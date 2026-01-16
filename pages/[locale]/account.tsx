@@ -58,14 +58,14 @@ const images = {
     'zh-HK': 'https://assets.lbctrl.com/uploads/37262326-f752-47c6-a8df-7c5cd8ac37e4/compare1_right_hk.png',
   },
   compare2_left: {
-    'zh-CN': 'https://assets.lbctrl.com/uploads/2df32199-b54d-4f70-8be4-70d278b01a56/compare2_left_cn.png',
-    'zh-HK': 'https://assets.lbctrl.com/uploads/a2237b0b-2b4a-4aee-a08e-f487b156e08e/compare2_left_hk.png',
-    'en': 'https://assets.lbctrl.com/uploads/d5f49060-7647-40b9-8a65-743307890269/compare2_left_en.png',
+    'zh-CN': 'https://assets.lbctrl.com/uploads/12556df7-3adf-44dc-8912-ec0c4c2617d0/compare2_left_cn.webp',
+    'zh-HK': 'https://assets.lbctrl.com/uploads/0ca9998c-bfe2-42ef-af99-9545b11c05ce/compare2_left_hk.webp',
+    'en': 'https://assets.lbctrl.com/uploads/90e8a926-d591-4c79-a67f-6a991b9e2024/compare2_left_en.webp',
   },
   compare2_right: {
-    'en': 'https://assets.lbctrl.com/uploads/646fbbaa-b5df-4529-8e04-9df3d573fe9c/compare2_right_en.png',
-    'zh-CN': 'https://assets.lbctrl.com/uploads/cda8e4e8-faaf-47eb-ad00-a74b09a3e347/compare2_right_cn.png',
-    'zh-HK': 'https://assets.lbctrl.com/uploads/75f3d9eb-960c-4b0e-94c8-700d40da33be/compare2_right_hk.png',
+    'en': 'https://assets.lbctrl.com/uploads/1159e808-6972-43e2-8440-2f30592b3d13/compare2_right_en.webp',
+    'zh-CN': 'https://assets.lbctrl.com/uploads/a6f190b5-f0ab-414a-998d-5f980deae8f4/compare2_right_cn.webp',
+    'zh-HK': 'https://assets.lbctrl.com/uploads/061fb95e-46be-4595-8765-3f0afcf7e058/compare2_right_hk.webp',
   },
 }
 
@@ -80,9 +80,9 @@ const AccountPage = () => {
     title: i18n.t('pages_locale_account_zcdue67crb'),
     desc: [i18n.t('pages_locale_account_lfecd6tvjo')],
     img: {
-      'en': 'https://assets.lbctrl.com/uploads/5d42e234-00f3-4d20-92de-c725d6887a90/banner_en.png',
-      'zh-CN': 'https://assets.lbctrl.com/uploads/fc93da5e-e581-457b-8fb9-02fdf934d72e/banner_cn.png',
-      'zh-HK': 'https://assets.lbctrl.com/uploads/37183c7b-2b1c-4705-af78-cc13ff4ad764/banner_hk.png',
+      'en': 'https://assets.lbctrl.com/uploads/3e43e76e-f01c-4ed7-aeb5-bbfeb76dba3a/account-en.webp',
+      'zh-CN': 'https://assets.lbctrl.com/uploads/7a160db6-6c54-4081-95c4-931c70a59ee3/account-cn.webp',
+      'zh-HK': 'https://assets.lbctrl.com/uploads/4328aab9-7704-4b20-b329-f99572d7346a/account-hk.webp',
     },
   }
 

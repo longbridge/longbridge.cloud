@@ -14,7 +14,7 @@ export const SEOMeta: FC<NextSeoProps & { url?: string; indexTitle?: boolean }> 
     url,
     images: [
       {
-        url: 'https://pub.pbkrs.com/files/202205/bHQKu1TbTP5prjuH/preview.png',
+        url: 'https://assets.lbkrs.com/uploads/4d4b033f-c9d7-49b0-a418-a0378d50390b/longportwhale-og.png',
       },
     ],
     site_name: 'Longbridge Whale',

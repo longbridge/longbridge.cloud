@@ -228,22 +228,25 @@ const Footer: FC = () => {
               </a>
             </div>
           )}
-          {legalTermsUrl && (
-            <a href={legalTermsUrl} target="_blank" rel="noreferrer">
+          <div className="space-x-2">
+            <a href={i18n.t('footer_009_link')} target="_blank" rel="noreferrer">
+              {i18n.t('footer_009')}
+            </a>
+            <a href={i18n.t('footer_009_link')} target="_blank" rel="noreferrer">
               {i18n.t('footer_008')}
             </a>
-          )}
-          {false && (
-            <div>
-              {links.map(({ label, href }) => {
-                return (
-                  <a className="ml-12 text-xs first:ml-0" href={href} key={label}>
-                    {label}
-                  </a>
-                )
-              })}
-            </div>
-          )}
+            {false && (
+              <div>
+                {links.map(({ label, href }) => {
+                  return (
+                    <a className="ml-12 text-xs first:ml-0" href={href} key={label}>
+                      {label}
+                    </a>
+                  )
+                })}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </footer>

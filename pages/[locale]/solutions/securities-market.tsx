@@ -87,25 +87,23 @@ const SecuritiesMarket: React.FC = () => {
   const table_1 = {
     heads: [
       { title: i18n.t('pages_locale_solutions_securities_market_8782') },
-      { title: i18n.t('whale-delivery-system-036'), light: true },
-      { title: i18n.t('whale-delivery-system-042'), light: true },
       { title: i18n.t('pages_locale_solutions_securities_market_8783'), light: true },
     ],
     body: [
       {
         label: i18n.t('pages_locale_solutions_securities_market_8784'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8785'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8786'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8787'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8788'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8789'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8790'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8791'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8792'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8793'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8794'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8795'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8785'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8786'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8787'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8788'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8789'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8790'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8791'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8792'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8793'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8794'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8795'), true],
         ],
       },
       {
@@ -119,8 +117,6 @@ const SecuritiesMarket: React.FC = () => {
               </div>
             </div>,
             true,
-            true,
-            true,
           ],
           [
             <div key="cn-shares">
@@ -129,8 +125,6 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_4')}
               </div>
             </div>,
-            true,
-            true,
             true,
           ],
           [
@@ -141,8 +135,6 @@ const SecuritiesMarket: React.FC = () => {
               </div>
             </div>,
             true,
-            true,
-            true,
           ],
           [
             <div key="sg-shares">
@@ -152,8 +144,6 @@ const SecuritiesMarket: React.FC = () => {
               </div>
             </div>,
             true,
-            true,
-            true,
           ],
           [
             <div key="long-shares">
@@ -162,8 +152,6 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_9')}
               </div>
             </div>,
-            false,
-            true,
             true,
           ],
           [
@@ -173,12 +161,10 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_11')}
               </div>
             </div>,
-            false,
-            true,
             true,
           ],
-          [i18n.t('pages_locale_solutions_securities_market_8797'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8798'), false, false, true],
+          [i18n.t('pages_locale_solutions_securities_market_8797'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8798'), true],
           [
             <div key="long-shares">
               <div>{i18n.t('pages_locale_solutions_securities_market_8910_12')}</div>
@@ -186,15 +172,13 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_13')}
               </div>
             </div>,
-            false,
-            true,
             true,
           ],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8799'),
-        value: [[i18n.t('pages_locale_solutions_securities_market_8800'), true, true, true]],
+        value: [[i18n.t('pages_locale_solutions_securities_market_8800'), true]],
       },
     ],
     colRatio: [14, 44, 14, 14, 14],
@@ -537,7 +521,6 @@ const SecuritiesMarket: React.FC = () => {
               <span>*</span>
               <div className="max-w-[780px] text-xs">
                 <div className="font-medium">{i18n.t('pages_locale_solutions_securities_market_8910_30')}</div>
-                {i18n.t('pages_locale_solutions_securities_market_8910_31')}
               </div>
             </div>
           </>

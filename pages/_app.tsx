@@ -112,8 +112,12 @@ const AppWithTranslation = appWithTranslation(({ Component, pageProps, router }:
     <ConfigProvider locale={antdLocale}>
       <div className="app" key={locale}>
         <Head>
-          <script src={'https://assets.lbctrl.com/pkg/sensorsdata/1.21.13.min.js'} defer />
-          <link rel="icon" type="image/x-icon" href="https://pub.pbkrs.com/files/202205/xAwaQmCk1cD1AUsm/favicon.png" />
+          <script src={'https://assets.lbkrs.com/pkg/sensorsdata/1.21.13.min.js'} defer />
+          <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://assets.lbkrs.com/uploads/ee5e5581-1bfb-47e0-852d-3a95b069f5b8/logo-small.png"
+          />
         </Head>
         <Script
           id="sensors-inject"

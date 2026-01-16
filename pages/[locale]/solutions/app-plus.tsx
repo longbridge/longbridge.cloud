@@ -98,16 +98,16 @@ const AppPlusPage = () => {
   const table_1 = {
     heads: [
       // { title: 'LongPort', subTitle: i18n.t('pages_locale_solutions_app_plus_8693') },
-      {
-        title: i18n.t('pages_locale_solutions_app_plus_8694'),
-        subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
-        light: true,
-      },
-      {
-        title: i18n.t('pages_locale_solutions_app_plus_8696'),
-        subTitle: i18n.t('pages_locale_solutions_app_plus_8697'),
-        light: true,
-      },
+      // {
+      //   title: i18n.t('pages_locale_solutions_app_plus_8694'),
+      //   subTitle: i18n.t('pages_locale_solutions_app_plus_8695'),
+      //   light: true,
+      // },
+      // {
+      //   title: i18n.t('pages_locale_solutions_app_plus_8696'),
+      //   subTitle: i18n.t('pages_locale_solutions_app_plus_8697'),
+      //   light: true,
+      // },
       {
         title: i18n.t('pages_locale_solutions_app_plus_8698'),
         subTitle: i18n.t('pages_locale_solutions_app_plus_8693'),
@@ -117,40 +117,26 @@ const AppPlusPage = () => {
     body: [
       {
         label: i18n.t('features_header_index_retail_terminal'),
-        value: [[i18n.t('pages_locale_solutions_app_plus_8699'), true, true, true]],
+        value: [[i18n.t('pages_locale_solutions_app_plus_8699'), true]],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_8700'),
         value: [
           [
             i18n.t('pages_locale_solutions_app_plus_8701'),
-            <span key="line-1" className="text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_app_plus_8701_1')}
-            </span>,
-            <span key="line-1" className="text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_app_plus_8701_2')}
-            </span>,
+
             <span key="line-1" className="text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_app_plus_8701_2')}
             </span>,
           ],
-          [i18n.t('pages_locale_solutions_app_plus_8679'), true, true, true, true],
+          [i18n.t('pages_locale_solutions_app_plus_8679'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_app_plus_8702'),
         value: [
-          [i18n.t('one-stop.custom-manager.title'), true, true, true],
-          [
-            i18n.t('pages_locale_solutions_app_plus_8681'),
-            <span key="line-1" className="text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_app_plus_8701_3')}
-            </span>,
-            <span key="line-1" className="text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_app_plus_8701_3')}
-            </span>,
-            true,
-          ],
+          [i18n.t('one-stop.custom-manager.title'), true],
+          [i18n.t('pages_locale_solutions_app_plus_8681'), true],
         ],
       },
     ],
@@ -432,7 +418,6 @@ const AppPlusPage = () => {
               <span>*</span>
               <div className="max-w-[780px] text-xs">
                 <div className="font-medium">{i18n.t('pages_locale_solutions_app_plus_8763_7')}</div>
-                {i18n.t('pages_locale_solutions_app_plus_8763_8')}
               </div>
             </div>
           </>

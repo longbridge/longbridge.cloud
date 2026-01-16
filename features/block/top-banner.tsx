@@ -207,7 +207,46 @@ export const IndexBanner = () => {
           ></BlockBetween>
         </Block>
       </TopBlock> */}
-      <TopBlock className="bg-repeat-round bg-[#0B0550] relative">
+      <TopBlock
+        className="bg-repeat-round relative"
+        imageUrl="https://assets.lbkrs.com/uploads/f5cc9dd6-0ba0-4e99-8d5c-ac8f293c543b/a0648b503fd0ace1c4aca57b7f2bae41.webp"
+      >
+        <Block>
+          <BlockBetween
+            left={
+              <div className="pl-2">
+                <img
+                  src="https://assets.lbctrl.com/uploads/748ea860-4dcc-44d2-9daa-9a9257a36639/e59318e69ce53224dc3549c73dc5cef6.png"
+                  style={{
+                    height: 46,
+                  }}
+                  className="mb-9"
+                  alt=""
+                />
+                <div className="text-left text-white text-xl lg:text-[42px]">Whale 全面煥新，正式更名為</div>
+                <div className="text-white text-3xl xl:text-[62px] leading-normal">LONGPORT Whale</div>
+                <div className="text-white text-3xl">新視野，更專注，航向新海域</div>
+                <div className="flex space-x-4">
+                  <LocaleLink className="flex items-center mt-10" to={'/about'}>
+                    <Button size="medium">{i18n.t('features_solutions_info_introduce_891112')}</Button>
+                  </LocaleLink>
+                  <ContactUs />
+                </div>
+              </div>
+            }
+            right={
+              <div className="h-[430px] sm:w-[527px] flex flex-col justify-center relative">
+                <img
+                  src="https://assets.lbctrl.com/uploads/19336f7c-c6a2-4e57-8b7a-8dd411da1a87/cce6d6dfdaded6d4405d119f732e822f.webp"
+                  alt="va"
+                  className="top-0 bottom-0 object-cover w-auto h-full lg:absolute"
+                />
+              </div>
+            }
+          ></BlockBetween>
+        </Block>
+      </TopBlock>
+      {/* <TopBlock className="bg-repeat-round bg-[#0B0550] relative">
         <Block>
           <BlockBetween
             left={
@@ -237,7 +276,7 @@ export const IndexBanner = () => {
             }
           ></BlockBetween>
         </Block>
-      </TopBlock>
+      </TopBlock> */}
       {/* <TopBlock imageUrl={BG_BANNER}>
         <Block>
           <BlockBetween
@@ -296,7 +335,7 @@ export const IndexBanner = () => {
           ></BlockBetween>
         </Block>
       </TopBlock> */}
-      <GrowTogetherTopBanner />
+      {/* <GrowTogetherTopBanner /> */}
       {/* <WhaleAmbassadorTopBanner /> */}
     </Carousel>
   )
