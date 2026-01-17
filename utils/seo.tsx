@@ -7,7 +7,7 @@ const domain = 'https://longportwhale.com'
 export const SEOMeta: FC<NextSeoProps & { url?: string; indexTitle?: boolean }> = props => {
   const localtion = useLocation()
   const { title: rawTitle, description, url = 'https://longportwhale.com', indexTitle } = props
-  const title = indexTitle ? rawTitle : `${rawTitle} - Longbridge Whale`
+  const title = indexTitle ? rawTitle : `${rawTitle} - LONGPORT Whale`
   const openGraph = {
     title,
     description,
@@ -17,7 +17,7 @@ export const SEOMeta: FC<NextSeoProps & { url?: string; indexTitle?: boolean }> 
         url: 'https://assets.lbkrs.com/uploads/4d4b033f-c9d7-49b0-a418-a0378d50390b/longportwhale-og.png',
       },
     ],
-    site_name: 'Longbridge Whale',
+    site_name: 'LONGPORT Whale',
   }
   const twitter = {
     handle: '@longbridgeapp',
