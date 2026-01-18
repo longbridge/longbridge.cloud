@@ -84,6 +84,7 @@ export const WhiteLabelBanner = ({ img }: { img: string }) => {
 export const IndexBanner = () => {
   const i18n = useTranslation('common')
   const isEn = i18n.i18n.language === 'en'
+  const locale = i18n.i18n.language
   const bannerMap: any = {
     'en': 'https://pub.pbkrs.com/files/202307/Nk95eVCroahcrRaP/HOME-BANNER-EN.png',
     'zh-CN': 'https://pub.pbkrs.com/files/202307/sJXSzDtouVe9vH3E/HOME-BANNER-CN.png',
@@ -223,14 +224,31 @@ export const IndexBanner = () => {
                   className="mb-9"
                   alt=""
                 />
-                <div className="text-left text-white text-xl lg:text-[42px]">Whale 全面煥新，正式更名為</div>
-                <div className="text-white text-3xl xl:text-[62px] leading-normal">LONGPORT Whale</div>
-                <div className="text-white text-3xl">新視野，更專注，航向新海域</div>
+                {locale === 'zh-HK' ? (
+                  <>
+                    <div className="text-left text-white text-xl lg:text-[42px]">Whale 全面煥新，正式更名為</div>
+                    <div className="text-white text-3xl xl:text-[62px] leading-normal">LONGPORT Whale</div>
+                    <div className="text-white text-3xl">新視野，更專注，航向新海域</div>
+                  </>
+                ) : locale === 'zh-CN' ? (
+                  <>
+                    <div className="text-left text-white text-xl lg:text-[42px]">Whale 全面焕新，正式更名为</div>
+                    <div className="text-white text-3xl xl:text-[62px] leading-normal">LONGPORT Whale</div>
+                    <div className="text-white text-3xl">新视野，更专注，航向新海域</div>
+                  </>
+                ) : (
+                  <>
+                    <div className="text-left text-white text-xl lg:text-[42px] font-light flex items-center">Longbridge Whale <img className='ml-2' src="https://assets.lbctrl.com/uploads/af0dbf94-3ab8-49fc-9db3-21457f5bd71a/399496a50adecb7152b2f5eb1d0b6346.svg" alt="" /></div>
+                    <div className="text-white text-3xl xl:text-[62px] leading-normal font-medium">LONGPORT Whale</div>
+                    <div className="text-white text-3xl font-normal">Broader horizon, deeper focus.</div>
+                    <div className="text-white text-3xl font-normal">From Bridge to Port, we evolve.</div>
+                  </>
+                )}
                 <div className="flex space-x-4">
                   <LocaleLink className="flex items-center mt-10" to={'/about'}>
-                    <Button size="medium">{i18n.t('features_solutions_info_introduce_891112')}</Button>
+                    <Button size="medium" className="rounded-lg">{i18n.t('features_solutions_info_introduce_891112')}</Button>
                   </LocaleLink>
-                  <ContactUs />
+                  <ContactUs className='rounded-lg' />
                 </div>
               </div>
             }
