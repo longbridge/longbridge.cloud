@@ -44,7 +44,7 @@ export const FirstScreen: FC<IFirstScreenProps> = ({
               }}
             >
               <h2 className={classNames('title')}>{title}</h2>
-              <p className=" desc">{desc}</p>
+              <div className="desc">{desc}</div>
               {contactUs && <TalkToUs className="text-xl font-medium" />}
             </div>
             <div className="flex-1 hidden ml-16 xl:block">{cover && <img src={cover} alt="cover" />}</div>

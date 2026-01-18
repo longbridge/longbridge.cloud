@@ -187,8 +187,6 @@ const SecuritiesMarket: React.FC = () => {
   const table_2 = {
     heads: [
       { title: i18n.t('pages_locale_solutions_securities_market_8782') },
-      { title: i18n.t('whale-delivery-system-036'), light: true },
-      { title: i18n.t('whale-delivery-system-042'), light: true },
       { title: i18n.t('pages_locale_solutions_securities_market_8783'), light: true },
     ],
 
@@ -204,8 +202,6 @@ const SecuritiesMarket: React.FC = () => {
               </div>
             </div>,
             true,
-            true,
-            true,
           ],
           [
             <div key="special">
@@ -214,8 +210,7 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_17')}
               </div>
             </div>,
-            true,
-            true,
+
             true,
           ],
         ],
@@ -223,37 +218,37 @@ const SecuritiesMarket: React.FC = () => {
       {
         label: i18n.t('pages_locale_solutions_securities_market_8802'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8803'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8804'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8805'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8803'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8804'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8805'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8806'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8807'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8808'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8807'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8808'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8809'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8810'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8811'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8810'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8811'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8812'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8813'), true, true, true],
-          ['Margin Call', true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8813'), true],
+          ['Margin Call', true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8814'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8815'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8816'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8815'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8816'), true],
         ],
       },
     ],
@@ -262,51 +257,46 @@ const SecuritiesMarket: React.FC = () => {
   const table_3 = {
     heads: [
       { title: i18n.t('pages_locale_solutions_securities_market_8782') },
-      { title: i18n.t('whale-delivery-system-036'), light: true },
-      { title: i18n.t('whale-delivery-system-042'), light: true },
       { title: i18n.t('pages_locale_solutions_securities_market_8783'), light: true },
     ],
     body: [
       {
         label: i18n.t('pages_locale_solutions_securities_market_8817'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8818'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8819'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8820'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8821'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8818'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8819'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8820'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8821'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8822'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8823'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8824'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8825'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8826'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8827'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8828'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8829'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8830'), false, false, true],
+          [i18n.t('pages_locale_solutions_securities_market_8823'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8824'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8825'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8826'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8827'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8828'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8829'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8830'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8831'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8832'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8833'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8834'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8835'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8836'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8837'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8838'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8839'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8832'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8833'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8834'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8835'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8836'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8837'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8838'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8839'), true],
           // autocorrect: false
           [
             'eDDA、sDDA',
-            false,
-            <span key="line-2" className="text-sm text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_securities_market_8910_18')}
-            </span>,
+
             <span key="line-2" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_securities_market_8910_19')}
             </span>,
@@ -314,45 +304,42 @@ const SecuritiesMarket: React.FC = () => {
           // autocorrect: true
           [
             i18n.t('pages_locale_solutions_securities_market_8840'),
-            false,
-            <span key="line-2" className="text-sm text-text_color_1_supplement">
-              {i18n.t('pages_locale_solutions_securities_market_8910_20')}
-            </span>,
+
             <span key="line-2" className="text-sm text-text_color_1_supplement">
               {i18n.t('pages_locale_solutions_securities_market_8910_21')}
             </span>,
           ],
-          [i18n.t('pages_locale_solutions_securities_market_8841'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8842'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8843'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8841'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8842'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8843'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8844'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8845'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8846'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8847'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8848'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8845'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8846'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8847'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8848'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8849'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8850'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8846'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8847'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8851'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8850'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8846'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8847'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8851'), true],
         ],
       },
       {
         label: i18n.t('src_pages_atm_deposit_add_single_index_8657'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8852'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8853'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8854'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8855'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8856'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8852'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8853'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8854'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8855'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8856'), true],
           [
             <div key="base">
               <div>{i18n.t('pages_locale_solutions_securities_market_8910_22')}</div>
@@ -360,8 +347,6 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_23')}
               </div>
             </div>,
-            true,
-            true,
             true,
           ],
           [
@@ -372,16 +357,14 @@ const SecuritiesMarket: React.FC = () => {
               </div>
             </div>,
             true,
-            true,
-            true,
           ],
-          [i18n.t('pages_locale_solutions_securities_market_8857'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8858'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8859'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8860'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8861'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8862'), false, false, true],
-          [i18n.t('pages_locale_solutions_securities_market_8863'), false, false, true],
+          [i18n.t('pages_locale_solutions_securities_market_8857'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8858'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8859'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8860'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8861'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8862'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8863'), true],
         ],
       },
     ],
@@ -391,19 +374,17 @@ const SecuritiesMarket: React.FC = () => {
   const table_4 = {
     heads: [
       { title: i18n.t('pages_locale_solutions_securities_market_8782') },
-      { title: i18n.t('whale-delivery-system-036'), light: true },
-      { title: i18n.t('whale-delivery-system-042'), light: true },
       { title: i18n.t('pages_locale_solutions_securities_market_8783'), light: true },
     ],
     body: [
       {
         label: i18n.t('pages_locale_solutions_securities_market_8864'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8865'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8866'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8867'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8868'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8869'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8865'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8866'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8867'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8868'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8869'), true],
           [
             <div key="base">
               <div>{i18n.t('pages_locale_solutions_securities_market_8910_26')}</div>
@@ -411,8 +392,6 @@ const SecuritiesMarket: React.FC = () => {
                 {i18n.t('pages_locale_solutions_securities_market_8910_27')}
               </div>
             </div>,
-            false,
-            true,
             true,
           ],
         ],
@@ -420,10 +399,10 @@ const SecuritiesMarket: React.FC = () => {
       {
         label: i18n.t('pages_locale_solutions_securities_market_8870'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8871'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8872'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8873'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8874'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8871'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8872'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8873'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8874'), true],
           [
             <div key="base">
               <div>{i18n.t('pages_locale_solutions_securities_market_8910_28')}</div>
@@ -432,47 +411,45 @@ const SecuritiesMarket: React.FC = () => {
               </div>
             </div>,
             true,
-            true,
-            true,
           ],
-          [i18n.t('pages_locale_solutions_securities_market_8875'), false, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8876'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8875'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8876'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8877'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8878'), true, true, true],
-          [i18n.t('crm_page_007'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8879'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8880'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8881'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8882'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8883'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8884'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8885'), false, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8878'), true],
+          [i18n.t('crm_page_007'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8879'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8880'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8881'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8882'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8883'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8884'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8885'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8886'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8887'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8888'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8887'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8888'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8889'),
         value: [
-          [i18n.t('pages_locale_solutions_securities_market_8890'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8891'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8892'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8893'), true, true, true],
-          [i18n.t('pages_locale_solutions_securities_market_8894'), true, true, true],
+          [i18n.t('pages_locale_solutions_securities_market_8890'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8891'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8892'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8893'), true],
+          [i18n.t('pages_locale_solutions_securities_market_8894'), true],
         ],
       },
       {
         label: i18n.t('pages_locale_solutions_securities_market_8895'),
-        value: [[i18n.t('pages_locale_solutions_securities_market_8896'), true, true, true]],
+        value: [[i18n.t('pages_locale_solutions_securities_market_8896'), true]],
       },
     ],
     colRatio: [14, 44, 14, 14, 14],
