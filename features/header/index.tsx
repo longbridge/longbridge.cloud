@@ -261,8 +261,13 @@ const Header: FC = () => {
   return (
     <div className={classNames(styles.header, 'flex px-6 xl:px-10 py-4 items-center')}>
       <div className="logo-wrap">
-        <LocaleLink className="logo" to="/">
-          <Icon type="cloud-logo" className="align-top" />
+        <LocaleLink className="logo h-full flex justify-center items-center" to="/">
+          {/* <Icon type="cloud-logo" className="align-top" /> */}
+          <img
+            className="h-6"
+            src="https://assets.lbctrl.com/uploads/c6a2b412-750e-462d-b1e9-f4f6a7a1ad5b/f206db1998a256ec4e790dc4e05a31c6.png"
+            alt=""
+          />
         </LocaleLink>
       </div>
       <div className="flex-1 main-content-width">

@@ -1,21 +1,12 @@
 import { useTranslation } from 'next-i18next'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo } from 'react'
 import { Carousel } from 'antd'
-import { useSafeState, useSize } from 'ahooks'
 import { useCarouserAutoHeight } from '@/hooks/use-resize'
 
 const HomeExamples = () => {
   const i18n = useTranslation('common')
   const list = useMemo(() => {
     return [
-      // {
-      //   title: i18n.t('features_home_home_examples_891131'),
-      //   desc: i18n.t('features_home_home_examples_891132'),
-      //   content: i18n.t('pages_example0'),
-      //   position: i18n.t('pages_example1'),
-      //   name: '',
-      //   company: i18n.t('pages_example2'),
-      // },
       {
         title: i18n.t('features_home_home_examples_891131'),
         desc: i18n.t('features_home_home_examples_891132'),
@@ -48,14 +39,6 @@ const HomeExamples = () => {
         position: 'RO & Director',
         company: i18n.t('features_home_home_examples_891208'),
       },
-      // {
-      //   title: i18n.t('features_home_home_examples_891131'),
-      //   desc: i18n.t('features_home_home_examples_891132'),
-      //   content: i18n.t('features_home_home_examples_891140'),
-      //   name: 'Mark',
-      //   position: i18n.t('features_home_home_examples_891141'),
-      //   company: i18n.t('features_home_home_examples_891142'),
-      // },
     ]
   }, [])
   const { containerRef, height } = useCarouserAutoHeight()

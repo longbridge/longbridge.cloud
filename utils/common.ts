@@ -58,9 +58,9 @@ export function fillZero(val: string | number) {
 
 export const getContactFormUrl = (locale = 'en') => {
   const formInfo: any = {
-    'zh-HK': 'https://longbridge.feishu.cn/share/base/form/shrcnhxdx8hRz3BYtrdTA8qO1Vb?lang=zh-HK',
-    'zh-CN': 'https://longbridge.feishu.cn/share/base/form/shrcn4MwXHaGJyGeZVD4O65ENTh?lang=zh',
-    'en': 'https://longbridge.feishu.cn/share/base/form/shrcn2rJ7qwic0PAwBXbrw6Ucjd?lang=en',
+    'zh-HK': 'https://longbridge.larkenterprise.com/share/base/form/shrcnhxdx8hRz3BYtrdTA8qO1Vb?lang=zh-HK',
+    'zh-CN': 'https://longbridge.larkenterprise.com/share/base/form/shrcn4MwXHaGJyGeZVD4O65ENTh?lang=zh',
+    'en': 'https://longbridge.larkenterprise.com/share/base/form/shrcn2rJ7qwic0PAwBXbrw6Ucjd?lang=en',
   }
   return formInfo[locale] || formInfo['en']
 }
