@@ -238,17 +238,34 @@ export const IndexBanner = () => {
                   </>
                 ) : (
                   <>
-                    <div className="text-left text-white text-xl lg:text-[42px] font-light flex items-center">Longbridge Whale <img className='ml-2' src="https://assets.lbctrl.com/uploads/af0dbf94-3ab8-49fc-9db3-21457f5bd71a/399496a50adecb7152b2f5eb1d0b6346.svg" alt="" /></div>
+                    <div className="text-left text-white text-xl lg:text-[42px] font-light flex items-center">
+                      Longbridge Whale{' '}
+                      <img
+                        className="ml-2"
+                        src="https://assets.lbctrl.com/uploads/af0dbf94-3ab8-49fc-9db3-21457f5bd71a/399496a50adecb7152b2f5eb1d0b6346.svg"
+                        alt=""
+                      />
+                    </div>
                     <div className="text-white text-3xl xl:text-[62px] leading-normal font-medium">LONGPORT Whale</div>
                     <div className="text-white text-3xl font-normal">Broader horizon, deeper focus.</div>
                     <div className="text-white text-3xl font-normal">From Bridge to Port, we evolve.</div>
                   </>
                 )}
                 <div className="flex space-x-4">
-                  <LocaleLink className="flex items-center mt-10" to={'/about'}>
-                    <Button size="medium" className="rounded-lg">{i18n.t('features_solutions_info_introduce_891112')}</Button>
+                  <LocaleLink
+                    className="flex items-center mt-10"
+                    to={
+                      isEn
+                        ? 'https://hk.prnasia.com/story/519612-2.shtml'
+                        : 'https://en.prnasia.com/story/archive/4865895_AE65895_0?utm_source=cleartime-customer&utm_medium=email'
+                    }
+                    rawValue
+                  >
+                    <Button size="medium" className="rounded-lg">
+                      {i18n.t('features_solutions_info_introduce_891112')}
+                    </Button>
                   </LocaleLink>
-                  <ContactUs className='rounded-lg' />
+                  <ContactUs className="rounded-lg" />
                 </div>
               </div>
             }
