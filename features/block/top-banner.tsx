@@ -256,8 +256,8 @@ export const IndexBanner = () => {
                     className="flex items-center mt-10"
                     to={
                       isEn
-                        ? 'https://hk.prnasia.com/story/519612-2.shtml'
-                        : 'https://en.prnasia.com/story/archive/4865895_AE65895_0?utm_source=cleartime-customer&utm_medium=email'
+                        ? 'https://en.prnasia.com/story/archive/4865895_AE65895_0?utm_source=cleartime-customer&utm_medium=email'
+                        : 'https://hk.prnasia.com/story/519612-2.shtml'
                     }
                     rawValue
                   >
