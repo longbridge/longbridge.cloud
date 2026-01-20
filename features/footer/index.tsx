@@ -220,7 +220,7 @@ const Footer: FC = () => {
             <a href={i18n.t('footer_009_link')} target="_blank" rel="noreferrer">
               {i18n.t('footer_009')}
             </a>
-            <a href={i18n.t('footer_009_link')} target="_blank" rel="noreferrer">
+            <a href={i18n.t('footer_008_link')} target="_blank" rel="noreferrer">
               {i18n.t('footer_008')}
             </a>
             {false && (
