@@ -4,4 +4,5 @@ module.exports = {
     locales: ['zh-HK', 'en', 'zh-CN'],
     localeDetection: true,
   },
+  reloadOnPrerender: true,
 }

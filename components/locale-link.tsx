@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'next-i18next'
 import { withKeepQueryPath } from '@/utils/local-path'
 // @ts-ignore
-export const LocaleLink: typeof Link = ({ to, children, rawValue, ...other }) => {
+export const LocaleLink = ({ to, children, rawValue, ...other }: any) => {
   const { i18n } = useTranslation('common')
   const localePrefix = i18n.language === 'zh-HK' ? '' : `/${i18n.language}`
 

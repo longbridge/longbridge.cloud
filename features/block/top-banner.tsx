@@ -239,6 +239,15 @@ export const IndexBanner = () => {
                 ) : (
                   <>
                     <div className="text-left text-white text-xl lg:text-[42px] font-light flex items-center">Longbridge Whale <img className='ml-2' src="https://assets.lbctrl.com/uploads/af0dbf94-3ab8-49fc-9db3-21457f5bd71a/399496a50adecb7152b2f5eb1d0b6346.svg" alt="" /></div>
+=======
+                    <div className="text-left text-white text-xl lg:text-[42px] font-light flex items-center">
+                      Longbridge Whale{' '}
+                      <img
+                        className="ml-2"
+                        src="https://assets.lbctrl.com/uploads/af0dbf94-3ab8-49fc-9db3-21457f5bd71a/399496a50adecb7152b2f5eb1d0b6346.svg"
+                        alt=""
+                      />
+                    </div>
                     <div className="text-white text-3xl xl:text-[62px] leading-normal font-medium">LONGPORT Whale</div>
                     <div className="text-white text-3xl font-normal">Broader horizon, deeper focus.</div>
                     <div className="text-white text-3xl font-normal">From Bridge to Port, we evolve.</div>
@@ -249,6 +258,18 @@ export const IndexBanner = () => {
                     <Button size="medium" className="rounded-lg">{i18n.t('features_solutions_info_introduce_891112')}</Button>
                   </LocaleLink>
                   <ContactUs className='rounded-lg' />
+                  <LocaleLink
+                    className="flex items-center mt-10"
+                    to={
+                      "/blog/longport-whale-rebrand"
+                    }
+                    rawValue
+                  >
+                    <Button size="medium" className="rounded-lg">
+                      {i18n.t('features_solutions_info_introduce_891112')}
+                    </Button>
+                  </LocaleLink>
+                  <ContactUs className="rounded-lg" />
                 </div>
               </div>
             }

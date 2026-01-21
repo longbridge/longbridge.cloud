@@ -9,7 +9,7 @@ export const WhaleReportList: FC = () => {
   const i18n = useTranslation('common')
 
   return (
-    <div className={`${styles['whale-report-list']} main-content-width container mx-auto py-10`}>
+    <div className={`${styles['whale-report-list']} main-content-width container mx-auto py-10 px-5`}>
       <div className="report-title">{i18n.t('header_nav_009')}</div>
       {reports.map((report, index) => (
         <WhaleReportItem key={index} report={report} />
