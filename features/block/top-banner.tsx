@@ -252,17 +252,16 @@ export const IndexBanner = () => {
                   </>
                 )}
                 <div className="flex space-x-4">
-                  <LocaleLink
+                  <a
                     className="flex items-center mt-10"
-                    to={
-                      "/blog/longport-whale-rebrand"
+                    href={
+                      `/${locale}/blog/longport-whale-rebrand`
                     }
-                    rawValue
                   >
                     <Button size="medium" className="rounded-lg">
                       {i18n.t('features_solutions_info_introduce_891112')}
                     </Button>
-                  </LocaleLink>
+                  </a>
                   <ContactUs className="rounded-lg" />
                 </div>
               </div>
