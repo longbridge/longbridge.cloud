@@ -28,7 +28,7 @@ const RebrandBlogPage = () => {
         description={t('meta_description')}
       />
       <div className="bg-white min-h-screen safe-area">
-        <article className="w-full max-w-[800px] mx-auto sm:px-6 md:px-6 py-12 md:py-24">
+        <article className="w-full max-w-[800px] mx-auto px-5 sm:px-6 md:px-8 py-12 md:py-24">
           <header className="mb-10 md:mb-14">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold leading-[1.15] mb-6 text-[#1a1a1a] tracking-tight font-sans">
               {t('title')}
