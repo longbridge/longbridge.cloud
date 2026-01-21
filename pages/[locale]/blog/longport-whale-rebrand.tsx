@@ -27,13 +27,13 @@ const RebrandBlogPage = () => {
         title={t('meta_title') || 'Longbridge Whale Rebrand'}
         description={t('meta_description')}
       />
-      <div className="bg-white min-h-screen">
-        <article className="max-w-[720px] mx-auto px-6 py-12 md:py-24 safe-area">
+      <div className="bg-white min-h-screen safe-area">
+        <article className="w-full max-w-[720px] mx-auto px-5 sm:px-6 md:px-8 py-12 md:py-24">
           <header className="mb-10 md:mb-14">
-            <h1 className="text-3xl md:text-5xl lg:text-[56px] font-bold leading-[1.15] mb-6 text-[#1a1a1a] tracking-tight font-sans">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold leading-[1.15] mb-6 text-[#1a1a1a] tracking-tight font-sans">
               {t('title')}
             </h1>
-            <div className="flex items-center text-[#757575] font-sans text-base">
+            <div className="flex flex-wrap items-center text-[#757575] font-sans text-base">
               <span>{t('meta_info.date')}</span>
               <span className="mx-2">·</span>
               <span>{t('meta_info.category')}</span>
@@ -80,13 +80,13 @@ const RebrandBlogPage = () => {
                 })}
               </div>
               <div className="mt-8 text-base md:text-lg text-[#1a1a1a] font-sans space-y-2">
-                <div>
+                <div className="flex flex-col sm:block">
                   <span className="font-semibold">{t('contact.website_label')}</span>
-                  <a href="https://longportwhale.com" className="hover:text-brand_color hover:underline sm:ml-1" target="_blank" rel="noreferrer">https://longportwhale.com</a>
+                  <a href="https://longportwhale.com" className="hover:text-brand_color hover:underline sm:ml-1 break-words" target="_blank" rel="noreferrer">https://longportwhale.com</a>
                 </div>
-                <div>
+                <div className="flex flex-col sm:block">
                   <span className="font-semibold">{t('contact.media_label')}</span>
-                  <a href="mailto:marketing@longportwhale.com" className="hover:text-brand_color hover:underline sm:ml-1">marketing@longportwhale.com</a>
+                  <a href="mailto:marketing@longportwhale.com" className="hover:text-brand_color hover:underline sm:ml-1 break-words">marketing@longportwhale.com</a>
                 </div>
               </div>
             </div>
