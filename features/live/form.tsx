@@ -77,7 +77,7 @@ function useFormItems(started: boolean) {
       messages: '',
     }
     formItems.forEach(({ key, value }) => {
-      ;(val as any)[key] = value
+      ; (val as any)[key] = value
     }, {} as any)
     return val
   }, [formItems])
@@ -98,7 +98,7 @@ export const LiveForm: FC = () => {
     const rule = formItems.filter(item => item.rule).every(item => item.rule?.(item.value))
     return required && rule
   }, [formItems])
-  const disabled = !isValid || (!started && succeed) || (started && startedSucceed)
+  const disabled = !isValid || (!started && !!succeed) || (started && startedSucceed)
   const { run, loading } = useRequest(
     async () => {
       if (disabled) {
@@ -162,8 +162,8 @@ export const LiveForm: FC = () => {
             ? i18n.t('live_form_003')
             : i18n.t('live_form_004')
           : startedSucceed
-          ? i18n.t('live_form_004_1')
-          : i18n.t('live_form_004')}
+            ? i18n.t('live_form_004_1')
+            : i18n.t('live_form_004')}
       </Button>
     </form>
   )
