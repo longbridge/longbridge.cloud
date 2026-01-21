@@ -69,6 +69,27 @@ const RebrandBlogPage = () => {
                 {t('quote')}
               </blockquote>
             </div>
+
+            <div className="mt-20 pt-10 border-t border-gray-200">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 text-[#1a1a1a] font-sans">{t('about.title')}</h3>
+              <div className="text-base md:text-lg leading-[1.8] text-[#5c5c5c] space-y-6">
+                {['p1', 'p2', 'p3', 'p4'].map((key) => {
+                  const text = t(`about.${key}`)
+                  if (!text || text === `about.${key}`) return null
+                  return <p key={key}>{text}</p>
+                })}
+              </div>
+              <div className="mt-8 text-base md:text-lg text-[#1a1a1a] font-sans space-y-2">
+                <div>
+                  <span className="font-semibold">{t('contact.website_label')}</span>
+                  <a href="https://longportwhale.com" className="hover:text-brand_color hover:underline sm:ml-1" target="_blank" rel="noreferrer">https://longportwhale.com</a>
+                </div>
+                <div>
+                  <span className="font-semibold">{t('contact.media_label')}</span>
+                  <a href="mailto:marketing@longportwhale.com" className="hover:text-brand_color hover:underline sm:ml-1">marketing@longportwhale.com</a>
+                </div>
+              </div>
+            </div>
           </div>
 
         </article>
