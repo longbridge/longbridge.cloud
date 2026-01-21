@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev --port=3000",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev --port=3001",
     "dev:prod": "NODE_OPTIONS=--openssl-legacy-provider PROXY=prod next dev --port=3000",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build && next export && yarn normalize-asset-path && yarn create-sitemap",
     "normalize-asset-path": "node ./normalize-asset-path",

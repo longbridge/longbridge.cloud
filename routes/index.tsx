@@ -37,6 +37,7 @@ import WhaleAmbassadorInvited from '@/pages/[locale]/whale-ambassador/invited'
 import WhaleAmbassadorInvitedSuccess from '@/pages/[locale]/whale-ambassador/invited-success'
 import WhaleAmbassadorPoster from '@/pages/[locale]/whale-ambassador/poster'
 import WhaleAmbassadorForm from '@/pages/[locale]/whale-ambassador/form'
+import RebrandBlogPage from '@/pages/[locale]/blog/longport-whale-rebrand'
 
 export const RouteList = ({ pageProps }: { pageProps: any }) => {
   return (
@@ -50,6 +51,7 @@ export const RouteList = ({ pageProps }: { pageProps: any }) => {
               <Route path="bss" element={<BssPage {...pageProps} />} />
               <Route path="trading" element={<TradingPage {...pageProps} />} />
               <Route path="crm" element={<CrmPage {...pageProps} />} />
+              <Route path="blog/longport-whale-rebrand" element={<RebrandBlogPage {...pageProps} />} />
               {/* <Route path="solutions" element={<SolutionsPage {...pageProps} />} /> */}
               {/* <Route path="solutions/app" element={<AppSolutionPage {...pageProps} />} /> */}
               <Route path="solutions" element={<IntroducingBroker {...pageProps} />} />
