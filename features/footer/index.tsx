@@ -82,7 +82,7 @@ const Footer: FC = () => {
       },
       {
         label: i18n.t('header_nav_009'),
-        value: '/whale-reports',
+        value: '/reports',
       },
       {
         label: i18n.t('features_footer_index_891179'),
