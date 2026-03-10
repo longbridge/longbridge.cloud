@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { Outlet, Route, Routes } from 'react-router-dom'
+import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
 import IndexPage from '@/pages/[locale]/index'
 import MarketPage from '@/pages/[locale]/market'
 import BssPage from '@/pages/[locale]/bss'
@@ -63,7 +63,7 @@ export const RouteList = ({ pageProps }: { pageProps: any }) => {
               <Route path="solutions/virtual-assets" element={<VirtualAssets {...pageProps} />} />
               <Route path="about" element={<AboutPage {...pageProps} />} />
               <Route path="live" element={<LivePage {...pageProps} />} />
-              <Route path="whale-reports" element={<WhaleReports {...pageProps} />} />
+              <Route path="whale-reports" element={<Navigate to="../reports" replace />} />
               <Route path="reports" element={<WhaleReports {...pageProps} />} />
               <Route path="backoffice" element={<BackOffice {...pageProps} />} />
               <Route path="marketing" element={<Marketing {...pageProps} />} />

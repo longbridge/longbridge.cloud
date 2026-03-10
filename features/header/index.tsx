@@ -113,7 +113,7 @@ function useNavs() {
         children: [],
       },
       {
-        value: '/whale-reports',
+        value: '/reports',
         suffix: '',
         label: i18n.t('header_nav_009'),
         children: [],
