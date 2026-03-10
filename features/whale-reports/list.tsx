@@ -36,7 +36,9 @@ export const WhaleReportItem = ({ report }: { report: ReportItem }) => {
         </div>
         <div className="desc">{report.description}</div>
       </div>
-      <img src={report.image} alt="" className="report-image" />
+      {report.image &&
+        <img src={report.image} alt="" className="report-image" />
+      }
     </div>
   )
 }
