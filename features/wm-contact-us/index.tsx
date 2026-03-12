@@ -19,7 +19,7 @@ const ContactUs = () => {
           },
           {
             label: i18n.t('features_footer_index_891117'),
-            value: '+852 3851 1711',
+            value: '+852 3611 6691',
             type: 'tel:',
           },
           // {
@@ -96,7 +96,7 @@ const ContactUs = () => {
                   {i18n.t('features_footer_index_891117')}
                   <a href={'tel:+65 9297 0216'}>{'+65 9297 0216'}</a>
                   <span>{' / '}</span>
-                  <a href={'tel:+852 3851 1711'}>{'+852 3851 1711'}</a>
+                  <a href={'tel:+852 3611 6691'}>{'+852 3611 6691'}</a>
                 </span>
                 {/* <span className="label">
                   {i18n.t('features_wm_contact_us_index_891161')}
