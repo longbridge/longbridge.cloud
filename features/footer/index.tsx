@@ -42,7 +42,7 @@ const Footer: FC = () => {
     const frontSell = [
       {
         label: i18n.t('features_footer_index_891117'),
-        value: '+852 3851 1711',
+        value: '+852 3611 6691',
         type: 'tel:',
       },
       {
@@ -59,7 +59,7 @@ const Footer: FC = () => {
       },
       {
         label: i18n.t('features_footer_index_891117'),
-        value: '+852 3851 1711',
+        value: '+852 3611 6691',
         type: 'tel:',
       },
       {
@@ -131,12 +131,20 @@ const Footer: FC = () => {
                 )}
               </div>
               <div className="flex flex-col space-y-3">
-                {frontSell.map(({ label, value, type }) => (
-                  <a className="text-xs font-normal whitespace-nowrap" href={`${type}${value}`} key={value}>
-                    {label}
-                    {value}
+                <div className="text-xs">
+                  {i18n.t('features_footer_index_891117')}
+                  <a className="text-xs font-normal whitespace-nowrap" href={`tel:+852 3611 6691`}>
+                    +852 3611 6691
                   </a>
-                ))}
+                  {' / '}
+                  <a className="text-xs font-normal whitespace-nowrap" href={`tel:+852 3611 6692`}>
+                    +852 3611 6692
+                  </a>
+                </div>
+                <a className="text-xs font-normal whitespace-nowrap" href={`mailto:bd@longportwhale.com`}>
+                  {i18n.t('features_footer_index_891118')}
+                  bd@longportwhale.com
+                </a>
               </div>
             </div>
             {/* <div className="">

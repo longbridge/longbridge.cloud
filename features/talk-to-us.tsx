@@ -79,7 +79,7 @@ function useFormItems() {
       messages: '',
     }
     formItems.forEach(({ key, value }) => {
-      ; (val as any)[key] = value
+      ;(val as any)[key] = value
     }, {} as any)
     return val
   }, [formItems])
@@ -184,7 +184,7 @@ const PhoneTalkToUs = ({ onClose }: { onClose: () => void }) => {
           i18n.t('features_talk_to_us_891119'),
           i18n.t('features_talk_to_us_891120'),
         ],
-        phone: '+852 3851 1711',
+        phone: '+852 3611 6691',
         email: 'bd@longportwhale.com',
       },
       {
